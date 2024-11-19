@@ -1,5 +1,20 @@
+import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
+
+
+
+
+
+
+
+
+
+
+
 function App() {
-  return <></>;
+  return <>
+  <NavBarComponent></NavBarComponent>
+  
+  </>;
 }
 
 export default App;
