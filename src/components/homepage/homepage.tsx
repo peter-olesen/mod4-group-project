@@ -4,11 +4,6 @@ import { Button } from "../ui/button";
 
 
 
-
-
-
-
-
 function Homepage() {
 
   return (

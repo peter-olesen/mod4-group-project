@@ -1,6 +1,7 @@
 // import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
 
-import Homepage from "./components/homepage/homepage";
+// import Homepage from "./components/homepage/homepage";
+import ContentButton from "./components/ui/content_button";
 
 
 
@@ -12,9 +13,13 @@ import Homepage from "./components/homepage/homepage";
 
 function App() {
   return <>
-  <Homepage></Homepage>
+  <ContentButton></ContentButton>
   
   </>;
 }
 
 export default App;
+
+
+
+
