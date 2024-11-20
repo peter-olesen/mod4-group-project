@@ -1,6 +1,6 @@
-import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
+// import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
 
-
+import Homepage from "./components/homepage/homepage";
 
 
 
@@ -12,7 +12,7 @@ import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
 
 function App() {
   return <>
-  <NavBarComponent></NavBarComponent>
+  <Homepage></Homepage>
   
   </>;
 }

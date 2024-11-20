@@ -1,37 +1,33 @@
-import * as React from "react"
-import { Menu } from "lucide-react"
+import * as React from "react";
+import { Menu } from "lucide-react";
 
-import { Button } from "../ui/button"
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "../ui/sheet"
+import { Button } from "../ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 const navItems = [
   { name: "Main Menu", href: "/" },
   { name: "Homepage", href: "/" },
   { name: "Norse Mythology", href: "/" },
   { name: "Gods and creatures", href: "/" },
-]
+];
 
 export function NavBarComponent() {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <nav className="bg-background border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-
           <div className="flex items-center">
-          <img src="/src/assets/images/Logo_nav_bar.png"   className="h-12 sm:h-10 md:h-12 w-auto object-contain" 
- />
-            <a href="/" className="flex-shrink-0" >
-
-             {/* <span className="text-2xl font-bold text-primary">Nordur</span> */}
+            <img
+              src="/src/assets/images/Logo_nav_bar.png"
+              className="h-12 sm:h-10 md:h-12 w-auto object-contain"
+            />
+            <a href="/" className="flex-shrink-0">
+              {/* <span className="text-2xl font-bold text-primary">Nordur</span> */}
             </a>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
@@ -43,7 +39,6 @@ export function NavBarComponent() {
                   {item.name}
                 </a>
               ))}
-              
             </div>
           </div>
           <div className="md:hidden">
@@ -60,7 +55,7 @@ export function NavBarComponent() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-foreground  px-3 py-12 active:bg-black active:text-white  rounded-md text-3xl w-full text-center"
+                      className="text-foreground font-modernAntiqua px-3 py-12 active:bg-black active:text-white  rounded-md text-3xl w-full text-center"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}
@@ -73,5 +68,5 @@ export function NavBarComponent() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
