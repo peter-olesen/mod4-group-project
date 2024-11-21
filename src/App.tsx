@@ -4,11 +4,13 @@ import { MainLayout } from "./layouts/MainLayout";
 import { FrontPage } from "./pages/FrontPage.tsx";
 // import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
 import Homepage from "./components/homepage/homepage";
+import ContentButton from "./components/ui/content_button";
 
 function App() {
   return (
     <>
       <Homepage />
+      <ContentButton></ContentButton>
 
       {/* <HelmetProvider>
         <BrowserRouter>
