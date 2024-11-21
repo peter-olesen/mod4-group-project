@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { MainLayout } from "./layouts/MainLayout";
@@ -7,9 +6,11 @@ import { FrontPage } from "./pages/FrontPage.tsx";
 import Homepage from "./components/homepage/homepage";
 
 function App() {
-  return <>
-    <Homepage />
-<!--   <HelmetProvider>
+  return (
+    <>
+      <Homepage />
+
+      {/* <HelmetProvider>
         <BrowserRouter>
           <Routes>
             <Route path={"/"} element={<MainLayout />}>
@@ -18,5 +19,8 @@ function App() {
             </Route>
           </Routes>
         </BrowserRouter>
-      </HelmetProvider> -->
-  </>;
+      </HelmetProvider>  */}
+    </>
+  );
+}
+export default App;
