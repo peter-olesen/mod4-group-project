@@ -8,21 +8,21 @@ type Props = {
 const GodsElement = ({children, name}: Props) =>{
   if(name === "heading-2"){
     return(
-      <h2 className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px]">
+      <h2 className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px] font-semibold">
         {children}
       </h2>
     )
   }
   else if(name === "heading-3"){
     return(
-      <h3 className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px]">
+      <h3 className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px] font-medium">
         {children}
       </h3>
     )
   }
   else if(name === "blockquote"){
     return(
-      <i className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px]">
+      <i className="flex flex-col justify-center items-center mt-5 mx-16 mb-0 leading-[30px] font-extralight">
         {children}
       </i>
     )
@@ -34,7 +34,7 @@ const GodsElement = ({children, name}: Props) =>{
   }
   else if(name === "paragraph"){
     return(
-      <p className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px]">
+      <p className="flex flex-col justify-center items-center mt-5 mx-16 mb-0 leading-[28px]">
         {children}
       </p>
     )

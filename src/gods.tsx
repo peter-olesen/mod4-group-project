@@ -8,12 +8,12 @@ type Element = {
       value: string
     }[]
   }[]
-
-  
 }
 type Props ={
   name: string
+  
 }
+
 const Gods = ({name}: Props)=>{
   const [data, setData] = useState<Element[]>([])
   useEffect(()=>{
@@ -32,7 +32,12 @@ const Gods = ({name}: Props)=>{
     þarf að breyta headers og taka þá sérstaklega út til að style-a
     */ 
     <>
-      <img src="#" alt="#" />
+      <div className="flex justify-center mt-32 mb-6">
+        <h1 className="font-bold text-2xl">Odin</h1>
+      </div>
+      <div className="flex h-[418px] w-auto justify-center items-center ">
+        <img className="h-96 w-72 rounded-br-[50px] border-black border-2" src="" alt="#" />
+      </div>
       <div className="text">
         {data.map(element =>{
           
@@ -40,7 +45,9 @@ const Gods = ({name}: Props)=>{
             <GodsElement  name = {element.nodeType}>
               {element.content.map(text =>{
                 if(text.value === "Family Tree"){
-                  return(<></>)
+                  return(<div className="flex h-[418px] w-auto justify-center items-center">
+                    <img className="h-96 w-72 rounded-br-[50px] border-black border-2" src="#" alt="#" />
+                  </div>)
                 }
                 return(
                   <>
