@@ -16,8 +16,17 @@ const App: React.FC = () => {
 
 /* function App() {
   return (
+
+
+
     <>
-      <HelmetProvider>
+      {/* <Homepage /> }
+      {/* <ContentButton></ContentButton> }
+      <NavBarComponent></NavBarComponent>
+     
+      <Gods name="Odin"></Gods>
+
+      {/* <HelmetProvider>
         <BrowserRouter>
           <Routes>
             <Route path={"/"} element={<MainLayout />}>
@@ -27,11 +36,8 @@ const App: React.FC = () => {
             <Route path={"/quiz"} element={<QuizFrontPage />} />
           </Routes>
         </BrowserRouter>
-      </HelmetProvider>
+      </HelmetProvider> }
     </>
   );
-} */
-
-
-
-export default App;
+}*/
+export default App
