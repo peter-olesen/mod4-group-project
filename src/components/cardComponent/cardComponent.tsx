@@ -43,7 +43,7 @@ export const CardComponent: React.FC<{}> = () => {
     return <div>Loading...</div>;
   }
   return (
-    <div className=" rounded-lg shadow-lg overflow-hidden">
+    <div className=" rounded-lg shadow-lg overflow-hidden mt-52">
       {/*<div className="relative h-40 sm:h-48"></div>*/}
       <img src={odin} alt="" className="w-full object-cover object-center" />
       <div className="p-4">

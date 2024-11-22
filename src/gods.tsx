@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import GodsElement from "./godsElement.tsx"
+import odin from "./assets/images/formated images/Images/Odin.png";
 type Element = {
   nodeType: string,
   content: {
@@ -27,28 +28,25 @@ const Gods = ({name}: Props)=>{
   },[])
 
   return(
-    /*Tekur bara fyrsta p - þarf fleiri
-    og
-    þarf að breyta headers og taka þá sérstaklega út til að style-a
-    */ 
+
     <>
       <div className="flex justify-center mt-32 mb-6">
-        <h1 className="font-bold text-2xl">Odin</h1>
+        <div className="font-bold text-2xl">{name}</div>
       </div>
       <div className="flex h-[418px] w-auto justify-center items-center ">
-        <img className="h-96 w-72 rounded-br-[50px] border-black border-2" src="" alt="#" />
+        <img className="h-96 w-72 rounded-br-[50px] " src={odin} alt={name} />
       </div>
       <div className="text">
-        {data.map(element =>{
-          
+        {data.map(element =>{          
           return(
             <GodsElement  name = {element.nodeType}>
               {element.content.map(text =>{
                 if(text.value === "Family Tree"){
-                  return(<div className="flex h-[418px] w-auto justify-center items-center">
-                    <img className="h-96 w-72 rounded-br-[50px] border-black border-2" src="#" alt="#" />
-                  </div>)
+                  return(<></>)
+                }else if(text.value === ""){
+
                 }
+                
                 return(
                   <>
                     {text.value}
@@ -57,6 +55,7 @@ const Gods = ({name}: Props)=>{
                 )
               })}
             </GodsElement>
+
           )
         })}
       </div>
