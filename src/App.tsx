@@ -4,21 +4,31 @@ import { MainLayout } from "./layouts/MainLayout";
 import { FrontPage } from "./pages/FrontPage.tsx";
 import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
 import Homepage from "./components/homepage/homepage";
-
+import {useState} from "react"
 
 import ContentButton from "./components/ui/content_button";
-import Odin from "./components/api_norse_myth/odin.tsx"
+import Gods from "./components/api_norse_myth/gods.tsx"
+import GodsElement from "./components/api_norse_myth/godsElement.tsx"
 
-// import Gods from "./components/api_norse_myth/gods.tsx";
+
+
+
+
 
 function App() {
+const [] = useState(0)
+
   return (
+
+
+
     <>
       {/* <Homepage /> */}
       {/* <ContentButton></ContentButton> */}
       <NavBarComponent></NavBarComponent>
      
-      <Odin></Odin>
+      <Gods name="Odin"></Gods>
+
       {/* <HelmetProvider>
         <BrowserRouter>
           <Routes>
