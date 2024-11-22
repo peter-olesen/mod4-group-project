@@ -1,40 +1,55 @@
-import { ReactNode } from "react";
+import { ReactNode } from "react"
+
 
 type Props = {
-  children: ReactNode;
-  name: string;
-};
-
-const GodsElement = ({ children, name }: Props) => {
-  if (name === "heading-2") {
-    return (
-      <h2 className="flex flex-col justify-center items-center mt-5   mx-5 mb-0 leading-[30px]">
+  children: ReactNode,
+  name: string
+}
+const GodsElement = ({children, name}: Props) =>{
+  if(name === "heading-2"){
+    return(
+      <h2 className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px]">
         {children}
       </h2>
-    );
-  } else if (name === "heading-3") {
-    return (
+    )
+  }
+  else if(name === "heading-3"){
+    return(
       <h3 className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px]">
         {children}
       </h3>
-    );
-  } else if (name === "blockquote") {
-    return (
-      <i className="flex flex-col justify-centeritems-center mt-5 mx-5 mb-0 leading-[30px]">
+    )
+  }
+  else if(name === "blockquote"){
+    return(
+      <i className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px]">
         {children}
       </i>
-    );
-  } else if (name === "embedded-entry-block") {
-    return <></>;
-  } else if (name === "paragraph") {
-    return (
+    )
+  }
+  else if(name === "embedded-entry-block"){
+    return(
+      <></>
+    )
+  }
+  else if(name === "paragraph"){
+    return(
       <p className="flex flex-col justify-center items-center mt-5 mx-5 mb-0 leading-[30px]">
         {children}
       </p>
-    );
-  } else if (name === "text") {
-    return <span>{children}</span>;
+    )
   }
-  return <>element does not exist</>;
-};
-export default GodsElement;
+  else if(name === "text"){
+    return(
+      <span>
+        {children}
+      </span>
+    )
+  }
+  return(
+    <>
+      element does not exist
+    </>
+  )
+}
+export default GodsElement
