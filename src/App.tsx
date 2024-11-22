@@ -2,29 +2,26 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { MainLayout } from "./layouts/MainLayout";
 import { FrontPage } from "./pages/FrontPage.tsx";
-import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
-import Homepage from "./components/homepage/homepage";
-import {useState} from "react"
+import {QuizFrontpage} from "./pages/QuizFrontpage.tsx";
+import React from 'react';
 
-import ContentButton from "./components/ui/content_button";
-import Gods from "./components/api_norse_myth/gods.tsx"
-import GodsElement from "./components/api_norse_myth/godsElement.tsx"
+const App: React.FC = () => {
+  return (
+    <div>
+      <QuizFrontpage />
+      {/* <OrangeButton /> */}
+    </div>
+  );
+};
 
-
-
-
-
-
-function App() {
-const [] = useState(0)
-
+/* function App() {
   return (
 
 
 
     <>
-      {/* <Homepage /> */}
-      {/* <ContentButton></ContentButton> */}
+      {/* <Homepage /> }
+      {/* <ContentButton></ContentButton> }
       <NavBarComponent></NavBarComponent>
      
       <Gods name="Odin"></Gods>
@@ -36,10 +33,11 @@ const [] = useState(0)
               <Route index element={<FrontPage />} />
               <Route path={"/something"} element={<FrontPage />} />
             </Route>
+            <Route path={"/quiz"} element={<QuizFrontPage />} />
           </Routes>
         </BrowserRouter>
-      </HelmetProvider>  */}
+      </HelmetProvider> }
     </>
   );
-}
-export default App;
+}*/
+export default App
