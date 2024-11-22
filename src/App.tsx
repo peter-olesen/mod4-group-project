@@ -6,11 +6,13 @@ import { FrontPage } from "./pages/FrontPage.tsx";
 import Homepage from "./components/homepage/homepage";
 import ContentButton from "./components/ui/content_button";
 
+import { Footer } from "./components/Footer/footer.tsx";
 function App() {
   return (
     <>
-      <Homepage />
-      <ContentButton></ContentButton>
+      {/* <Homepage />
+      <ContentButton></ContentButton> */}
+      <Footer />
 
       {/* <HelmetProvider>
         <BrowserRouter>
