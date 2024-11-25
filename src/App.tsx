@@ -4,11 +4,18 @@ import { MainLayout } from "./layouts/MainLayout";
 import { FrontPage } from "./pages/FrontPage.tsx";
 import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
 import Homepage from "./components/homepage/homepage";
-import {useState} from "react"
+import { useState } from "react";
 
 import ContentButton from "./components/ui/content_button";
-import Gods from "./components/api_norse_myth/gods.tsx"
-import GodsElement from "./components/api_norse_myth/godsElement.tsx"
+import Gods from "./components/api_norse_myth/gods.tsx";
+import GodsElement from "./components/api_norse_myth/godsElement.tsx";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 
 
 
@@ -16,18 +23,21 @@ import GodsElement from "./components/api_norse_myth/godsElement.tsx"
 
 
 function App() {
-const [] = useState(0)
+  const [] = useState(0);
 
   return (
-
-
-
     <>
       {/* <Homepage /> */}
       {/* <ContentButton></ContentButton> */}
+
       <NavBarComponent></NavBarComponent>
      
+
       <Gods name="Odin"></Gods>
+
+
+
+
 
       {/* <HelmetProvider>
         <BrowserRouter>
