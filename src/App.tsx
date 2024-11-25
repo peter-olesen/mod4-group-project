@@ -14,6 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Footer } from "./components/Footer/footer.tsx";
 
 const App: React.FC = () => {
   const [] = useState(0)
@@ -25,6 +26,7 @@ const App: React.FC = () => {
       {/* <ContentButton></ContentButton> */}
       {/* <NavBarComponent></NavBarComponent> */}
       {/* <Gods name="Odin"></Gods> */}
+      {/* <Footer /> */}
       
       {/* <HelmetProvider>
         <BrowserRouter>
@@ -40,5 +42,5 @@ const App: React.FC = () => {
       }*/
     </>
   );
-
-export default App
+      
+export default App;
