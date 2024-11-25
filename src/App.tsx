@@ -1,19 +1,33 @@
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { MainLayout } from "./layouts/MainLayout";
 import { FrontPage } from "./pages/FrontPage.tsx";
-// import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
+import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
 import Homepage from "./components/homepage/homepage";
 import ContentButton from "./components/ui/content_button";
-
+import Gods from "./components/api_norse_myth/gods.tsx";
+import GodsElement from "./components/api_norse_myth/godsElement.tsx";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Footer } from "./components/Footer/footer.tsx";
-function App() {
+
+const App: React.FC = () => {
+  const [] = useState(0)
   return (
     <>
-      {/* <Homepage />
-      <ContentButton></ContentButton> */}
-      <Footer />
-
+      {/* <QuizFrontpage /> */}
+      {/* <OrangeButton /> */}
+      {/* <Homepage /> */}
+      {/* <ContentButton></ContentButton> */}
+      {/* <NavBarComponent></NavBarComponent> */}
+      {/* <Gods name="Odin"></Gods> */}
+      {/* <Footer /> */}
+      
       {/* <HelmetProvider>
         <BrowserRouter>
           <Routes>
@@ -21,10 +35,12 @@ function App() {
               <Route index element={<FrontPage />} />
               <Route path={"/something"} element={<FrontPage />} />
             </Route>
+            <Route path={"/quiz"} element={<QuizFrontPage />} />
           </Routes>
         </BrowserRouter>
-      </HelmetProvider>  */}
+      </HelmetProvider> }
+      }*/
     </>
   );
-}
+      
 export default App;
