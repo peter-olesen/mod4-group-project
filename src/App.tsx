@@ -5,12 +5,17 @@ import { FrontPage } from "./pages/FrontPage.tsx";
 // import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
 import Homepage from "./components/homepage/homepage";
 import ContentButton from "./components/ui/content_button";
+import HistoricalMap from "./pages/HistoricalMap";
+import { NavBarComponent } from "./components/hamburgerMenu/hamburger.tsx";
 
 function App() {
   return (
     <>
-      <Homepage />
-      <ContentButton></ContentButton>
+      <NavBarComponent></NavBarComponent>
+      <HistoricalMap />
+
+      {/*  <Homepage />
+      <ContentButton></ContentButton> */}
 
       {/* <HelmetProvider>
         <BrowserRouter>
