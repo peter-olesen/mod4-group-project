@@ -9,7 +9,7 @@ export default {
   		fontFamily: {
   			montserrat: ["Montserrat", "sans-serif"],
   			newRocker: ['New Rocker"', "cursive"],
-  			modernAntiqua: ['Modern Antiqua"', "serif"]
+  			modernAntiqua: ['Modern Antiqua', "serif"]
   		},
   		screens: {
   			xs: {
