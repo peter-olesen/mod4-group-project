@@ -15,32 +15,38 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Footer } from "./components/Footer/footer.tsx";
+import NorseHomepage from "./components/Homepage Norse/homepage_comp.tsx";
+
+
 
 const App: React.FC = () => {
   const [] = useState(0)
   return (
-    <>
-      {/* <QuizFrontpage /> */}
-      {/* <OrangeButton /> */}
-      {/* <Homepage /> */}
-      {/* <ContentButton></ContentButton> */}
-      {/* <NavBarComponent></NavBarComponent> */}
-      {/* <Gods name="Odin"></Gods> */}
-      {/* <Footer /> */}
+    
+    <NorseHomepage></NorseHomepage>
+    // <Gods name='loki'></Gods>
+    // <>
+    //   {/* <QuizFrontpage /> */}
+    //   {/* <OrangeButton /> */}
+    //   {/* <Homepage /> */}
+    //   {/* <ContentButton></ContentButton> */}
+    //   {/* <NavBarComponent></NavBarComponent> */}
+    //   {/* <Gods name="Odin"></Gods> */}
+    //   {/* <Footer /> */}
       
-      {/* <HelmetProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path={"/"} element={<MainLayout />}>
-              <Route index element={<FrontPage />} />
-              <Route path={"/something"} element={<FrontPage />} />
-            </Route>
-            <Route path={"/quiz"} element={<QuizFrontPage />} />
-          </Routes>
-        </BrowserRouter>
-      </HelmetProvider> }
-      }*/
-    </>
-  );
+    //   {/* <HelmetProvider>
+    //     <BrowserRouter>
+    //       <Routes>
+    //         <Route path={"/"} element={<MainLayout />}>
+    //           <Route index element={<FrontPage />} />
+    //           <Route path={"/something"} element={<FrontPage />} />
+    //         </Route>
+    //         <Route path={"/quiz"} element={<QuizFrontPage />} />
+    //       </Routes>
+    //     </BrowserRouter>
+    //   </HelmetProvider> }
+    //   }*/
+    // </>
+  )};
       
 export default App;
