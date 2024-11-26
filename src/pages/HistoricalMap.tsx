@@ -13,7 +13,7 @@ const HistoricalMap = () => {
 
       <hr></hr>
 
-      <p className="font-montserrat mt-11">
+      <p className="font-montserrat mt-11 mx-5">
         Sagas and Mythology: The majority of Icelandic mythological stories and
         sagas are set during this period, with tales of gods (Odin, Thor,
         Freyja) and legendary heroes like Sigurd the Dragon Slayer. The stories
