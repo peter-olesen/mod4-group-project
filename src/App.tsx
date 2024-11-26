@@ -20,13 +20,14 @@ import { NavBarComponent } from "./components/hamburgerMenu/hamburger";
 import IcelandicFolklore from "./pages/IcelandicFolklore.tsx";
 import HistoricalMap from "./pages/HistoricalMap.tsx";
 import IcelandicFolkHome from "./pages/IcelandicFolkHome.tsx";
+import IcelandicSagas from "./pages/IcelandicSagas.tsx";
 const App: React.FC = () => {
   const [] = useState(0);
   return (
     <>
       <NavBarComponent></NavBarComponent>
       {/* <IcelandicFolklore /> */}
-      <IcelandicFolkHome />
+      <IcelandicSagas />
 
       {/*  <Homepage />
       <ContentButton></ContentButton> */}
