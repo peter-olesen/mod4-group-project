@@ -1,9 +1,11 @@
 import ContentButton from "../ui/content_button";
+import { NavBarComponent } from "../hamburgerMenu/hamburger.tsx";
 
 const NorseHomepage = () => {
   return (
     <>
-      <div className="px-5">
+    <NavBarComponent></NavBarComponent>
+      <div className="px-5 pt-8">
         <div className=" flex flex-col justify-center items-center ">
           <img
             className=""
