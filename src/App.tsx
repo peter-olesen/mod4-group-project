@@ -21,13 +21,15 @@ import IcelandicFolklore from "./pages/IcelandicFolklore.tsx";
 import HistoricalMap from "./pages/HistoricalMap.tsx";
 import IcelandicFolkHome from "./pages/IcelandicFolkHome.tsx";
 import IcelandicSagas from "./pages/IcelandicSagas.tsx";
+import { Footer } from "./components/Footer/footer.tsx";
 const App: React.FC = () => {
   const [] = useState(0);
   return (
     <>
       <NavBarComponent></NavBarComponent>
       {/* <IcelandicFolklore /> */}
-      <IcelandicSagas />
+      <HistoricalMap />
+      <Footer></Footer>
 
       {/*  <Homepage />
       <ContentButton></ContentButton> */}
