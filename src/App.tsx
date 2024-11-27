@@ -2,13 +2,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { MainLayout } from "./layouts/MainLayout";
 import { FrontPage } from "./pages/FrontPage.tsx";
-import {QuizFrontpage} from "./pages/QuizFrontpage.tsx";
+import Quiz1page from "./pages/Quiz1page.tsx";
 import React from 'react';
 
 const App: React.FC = () => {
   return (
     <div>
-      <QuizFrontpage />
+      <Quiz1page />
       {/* <OrangeButton /> */}
     </div>
   );
