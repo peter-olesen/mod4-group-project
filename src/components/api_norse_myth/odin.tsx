@@ -15,7 +15,7 @@ const Odin = () => {
   const [data, setData] = useState<Element[]>([]);
   useEffect(() => {
     const getData = async () => {
-      const godUrl = "https://mod4-backend.onrender.com/odin";
+      const godUrl = "https://mod4-backend.onrender.com/";
       const r = await fetch(godUrl);
       const json = await r.json();
       setData(json.pageProps.topicContent.content.json.content);
