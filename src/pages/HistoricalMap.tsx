@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Map from "../assets/images/formated/Map of Iceland.png";
 import Timeline from "../assets/images/formated/Timeline.png";
 import Frame from "../assets/images/formated/Frame 17.png";
@@ -6,10 +5,12 @@ const HistoricalMap = () => {
   return (
     <div>
       <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80">
-        History of Icelandic Folklore{" "}
+        History of Icelandic Folklore
       </h1>
-      <img src={Map} />
-      <img src={Timeline} />
+      <div className="flex items-center flex-col">
+        <img src={Map} />
+        <img src={Timeline} />
+      </div>
 
       <hr></hr>
 

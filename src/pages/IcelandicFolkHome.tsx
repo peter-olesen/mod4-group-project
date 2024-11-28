@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Droplaugarsona from "../assets/images/formated/Dropplaugarsona saga.png";
 import DroplaugsPlot from "../assets/images/formated/Dropplaugs Plot summary.png";
 import DroplaugsTheme from "../assets/images/formated/Dropplaugs Themes.png";

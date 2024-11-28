@@ -6,10 +6,14 @@ import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { NavLink } from "react-router-dom";
 
 const navItems = [
-  { name: "Main Menu", path: "/" },
-  { name: "Homepage", path: "/" },
+  { name: "Back to Frontpage", path: "/" },
   { name: "Norse Mythology", path: "/norse-mythology" },
   { name: "Gods and creatures", path: "/" },
+  { name: "Icelandic Folklore", path: "/icelandic-folklore" },
+  { name: "Icelandic Sagas", path: "/icelandic-sagas" },
+  { name: "Icelandic Historical Map", path: "/historical-map" },
+  { name: "Icelandic Blabber", path: "/icelandic-folklore" },
+  { name: "Quiz", path: "/quiz" },
 ];
 
 export function NavBarComponent() {
@@ -56,7 +60,7 @@ export function NavBarComponent() {
                     <NavLink
                       key={item.name}
                       to={item.path}
-                      className="text-foreground font-modernAntiqua px-3 py-12 active:bg-black active:text-white  rounded-md text-3xl w-full text-center"
+                      className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white  rounded-md text-3xl w-full"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}

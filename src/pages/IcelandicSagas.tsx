@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Droplaugarsona from "../assets/images/formated/Dropplaugarsona saga.png";
 //we need cards for this//
 const IcelandicSagas = () => {

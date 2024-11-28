@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import IcelandFolklore from "../assets/images/formated/Icelandicfolkloremain.png";
 import { Button } from "@/components/ui/button";
 
