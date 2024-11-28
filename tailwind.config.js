@@ -13,7 +13,7 @@ export default {
   		},
   		screens: {
   			xs: {
-  				max: '400px'
+  				max: '350px'
   			}
   		},
   		borderRadius: {

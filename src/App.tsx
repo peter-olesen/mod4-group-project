@@ -16,14 +16,17 @@ import {
 } from "@/components/ui/accordion";
 import { Footer } from "./components/Footer/footer.tsx";
 import NorseHomepage from "./components/Homepage Norse/homepage_comp.tsx";
-
+import NorseFull from "./pages/norse_myth_extended_description.tsx";
 
 
 const App: React.FC = () => {
   const [] = useState(0)
   return (
     
-    <NorseHomepage></NorseHomepage>
+
+    <NorseFull> </NorseFull>
+
+    // <NorseHomepage></NorseHomepage>
     // <Gods name='loki'></Gods>
     // <>
     //   {/* <QuizFrontpage /> */}
