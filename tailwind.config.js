@@ -7,15 +7,9 @@ export default {
   theme: {
   	extend: {
   		fontFamily: {
-<<<<<<< HEAD
   			montserrat: ["Montserrat", "sans-serif"],
   			newRocker: ['New Rocker', "cursive"],
   			modernAntiqua: ['Modern Antiqua', "serif"]
-=======
-  			montserrat: ['Montserrat','sans-serif'],
-  			newRocker: ['New Rocker"', "cursive"],
-  			modernAntiqua: ['Modern Antiqua', 'serif']
->>>>>>> dev
   		},
   		screens: {
   			xs: {

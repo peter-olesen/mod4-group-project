@@ -1,5 +1,5 @@
 import background from "../assets/images/QuizFrontpage.jpg";
-import "../assets/global.css";
+
 
 // Styles for the button
 const buttonStyle: React.CSSProperties = {

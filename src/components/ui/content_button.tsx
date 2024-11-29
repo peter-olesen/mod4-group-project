@@ -1,15 +1,8 @@
 type Props = {
-<<<<<<< HEAD
   content: string,
   onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 function ContentButton({content, onClick}: Props) {
-=======
-  content: string;
-};
-
-function ContentButton({ content }: Props) {
->>>>>>> dev
   return (
     <>
     <div></div>
