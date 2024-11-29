@@ -1,3 +1,5 @@
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -5,13 +7,13 @@ export default {
   theme: {
   	extend: {
   		fontFamily: {
-  			montserrat: ["Montserrat", "sans-serif"],
-  			newRocker: ['New Rocker"', "cursive"],
-  			modernAntiqua: ['Modern Antiqua"', "serif"]
+  			montserrat: ['Montserrat','sans-serif'],
+  			newRocker: ['New Rocker', "cursive"],
+  			modernAntiqua: ['Modern Antiqua', 'serif']
   		},
   		screens: {
   			xs: {
-  				max: '400px'
+  				max: '350px'
   			}
   		},
   		borderRadius: {
@@ -86,5 +88,10 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    //Iconify plugin
+    addDynamicIconSelectors(),
+  
+  ],
 };
