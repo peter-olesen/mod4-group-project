@@ -7,14 +7,20 @@ import { NavLink } from "react-router-dom";
 
 const navItems = [
   { name: "Back to Frontpage", path: "/" },
+  { name: "Quiz", path: "/quiz" },
+];
+
+const norseItems = [
   { name: "Norse Mythology", path: "/norse-mythology" },
   { name: "Norse Extended", path: "/norse-myth-extended" },
   { name: "Gods and creatures", path: "/" },
+];
+
+const folkloreItems = [
   { name: "Icelandic Folklore", path: "/icelandic-folklore" },
   { name: "Icelandic Sagas", path: "/icelandic-sagas" },
   { name: "Icelandic Historical Map", path: "/historical-map" },
   { name: "Icelandic Blabber", path: "/icelandic-folklore" },
-  { name: "Quiz", path: "/quiz" },
 ];
 
 export function NavBarComponent() {
@@ -58,6 +64,32 @@ export function NavBarComponent() {
               <SheetContent side="right" className="sm:w-[300px]  ">
                 <div className="flex flex-col  items-center  space-y-4 mt-4 ">
                   {navItems.map((item) => (
+                    <NavLink
+                      key={item.name}
+                      to={item.path}
+                      className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white  rounded-md text-3xl w-full"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </NavLink>
+                  ))}
+                  <h2 className="text-foreground font-modernAntiqua text-2xl">
+                    Norse Mythology
+                  </h2>
+                  {norseItems.map((item) => (
+                    <NavLink
+                      key={item.name}
+                      to={item.path}
+                      className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white  rounded-md text-3xl w-full"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </NavLink>
+                  ))}
+                  <h2 className="text-foreground font-modernAntiqua text-2xl">
+                    Icelandic Folklore
+                  </h2>
+                  {folkloreItems.map((item) => (
                     <NavLink
                       key={item.name}
                       to={item.path}
