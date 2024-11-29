@@ -1,18 +1,16 @@
 import background from "../assets/images/QuizFrontpage.jpg";
-import React from "react";
-import '../assets/global.css';
-
+import "../assets/global.css";
 
 // Styles for the button
 const buttonStyle: React.CSSProperties = {
-  backgroundColor:"#000000", // Orange background
-  color: "white",            // White text
+  backgroundColor: "#000000", // Orange background
+  color: "white", // White text
   border: "none",
-  padding: "100px 110px",      // Button padding
-  fontSize: "22px",          // Button text size
+  padding: "100px 110px", // Button padding
+  fontSize: "22px", // Button text size
   fontFamily: "ModernAntiqua",
-  cursor: "pointer",         // Pointer cursor on hover
-  borderRadius: "22px",       // Rounded corners
+  cursor: "pointer", // Pointer cursor on hover
+  borderRadius: "22px", // Rounded corners
   transition: "background-color 0.3s ease", // Smooth hover effect
 };
 
@@ -21,9 +19,9 @@ const QuizFrontpage = () => {
     <div
       style={{
         backgroundImage: `url(${background})`, // Background image
-        height: "100vh",                       // Full viewport height
-        backgroundSize: "cover",               // Cover the container
-        backgroundPosition: "center",          // Center the image
+        height: "100vh", // Full viewport height
+        backgroundSize: "cover", // Cover the container
+        backgroundPosition: "center", // Center the image
       }}
     >
       {/* Central content */}
