@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
 
-export const MainLayout = () => {
+export const QuizLayout = () => {
   return <Outlet />;
 };
