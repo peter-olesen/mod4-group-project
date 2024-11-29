@@ -1,7 +1,8 @@
 type Props = {
-  content: string
+  content: string,
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
-function ContentButton({content}: Props) {
+function ContentButton({content, onClick}: Props) {
   return (
     <>
     <div></div>
@@ -10,6 +11,7 @@ function ContentButton({content}: Props) {
          border-black rounded shadow active:bg-black active:text-white font-montserrat
          mx-auto
          "
+         onClick={onClick}
       >
         {content}
       </button>

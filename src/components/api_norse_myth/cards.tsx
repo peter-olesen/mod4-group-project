@@ -69,7 +69,7 @@ const NorseGodCards = ({name}: Props)=>{
       <div>
       {gods.length > 0 ? (
         gods.map((god: God) => (
-          <div key={god.slug} className="card flex flex-col items-center justify-center my-16 border-b-2 pb-10 mx-5" >
+          <div key={god.slug} className="card flex flex-col items-center justify-center my-16 border-b-2 pb-16 mx-5" >
               {(customImages[god.slug] || god.image?.url) && (
               <img 
               src={customImages[god.slug] || god.image?.url} 

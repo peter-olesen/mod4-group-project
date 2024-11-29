@@ -8,7 +8,7 @@ export default {
   	extend: {
   		fontFamily: {
   			montserrat: ["Montserrat", "sans-serif"],
-  			newRocker: ['New Rocker"', "cursive"],
+  			newRocker: ['New Rocker', "cursive"],
   			modernAntiqua: ['Modern Antiqua', "serif"]
   		},
   		screens: {

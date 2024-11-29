@@ -1,13 +1,11 @@
 import { useState } from "react";
-import NorseGodCards from "./components/api_norse_myth/cards.tsx";
-
+import GodCardsPage from "./pages/godCardsPage";
 
 const App: React.FC = () => {
   const [] = useState(0);
   return (
     <>
-      
-      <NorseGodCards name="odin"></NorseGodCards>
+      <GodCardsPage/>
     </>
   );
 };
