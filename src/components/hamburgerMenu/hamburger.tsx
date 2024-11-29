@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 const navItems = [
   { name: "Back to Frontpage", path: "/" },
   { name: "Norse Mythology", path: "/norse-mythology" },
+  { name: "Norse Extended", path: "/norse-myth-extended" },
   { name: "Gods and creatures", path: "/" },
   { name: "Icelandic Folklore", path: "/icelandic-folklore" },
   { name: "Icelandic Sagas", path: "/icelandic-sagas" },

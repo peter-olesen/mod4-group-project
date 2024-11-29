@@ -1,16 +1,13 @@
-import { NavBarComponent } from "../components/hamburgerMenu/hamburger.tsx";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {Footer} from "../components/Footer/footer.tsx"
 
 const NorseFull = () => {
   return (
     <>
-      <NavBarComponent></NavBarComponent>
       <div className="mx-5 pt-5 flex justify-center flex-col ">
         <h1 className="font-modernAntiqua text-center object-center text-3xl py-5 xs:text-base">
           {" "}
@@ -39,17 +36,16 @@ const NorseFull = () => {
           </p>
         </div>
         <div className="py-5">
-         
           <div className="flex justify-center items-center py-5 flex-col">
-          <h2 className="text-2xl font-modernAntiqua xs:text-base">
-            The Nine Realms
-          </h2>
-          <img
-            className=" w-[450px] rounded-br-[50px]"
-            src="src/assets/images/nine_realms.jpg"
-            alt=""
-          />
-        </div>
+            <h2 className="text-2xl font-modernAntiqua xs:text-base">
+              The Nine Realms
+            </h2>
+            <img
+              className=" w-[450px] rounded-br-[50px]"
+              src="src/assets/images/nine_realms.jpg"
+              alt=""
+            />
+          </div>
 
           <p className="font-montserrat leading-7 xs:text-sm">
             The Nine Realms in Norse mythology represent different worlds within
@@ -61,13 +57,13 @@ const NorseFull = () => {
         <div className="py-5 flex justify-center items-center flex-col ">
           <Accordion type="single" collapsible>
             <div className="flex justify-center items-center flex-col">
-            <h2 className="py-5 text-2xl font-modernAntiqua"> Asgard</h2>
-
-            <img
-              className=" rounded-br-[50px] w-[800px]"
-              src="src/assets/images/asgard.png"
-              alt=""
-            />{" "}</div>
+              <h2 className="py-5 text-2xl font-modernAntiqua"> Asgard</h2>
+              <img
+                className=" rounded-br-[50px] w-[800px]"
+                src="src/assets/images/asgard.png"
+                alt=""
+              />{" "}
+            </div>
             <AccordionItem value="item-1">
               <p className="pt-5 text-base font-montserrat leading-7 xs:text-sm">
                 {" "}
@@ -195,12 +191,12 @@ const NorseFull = () => {
           <Accordion type="single" collapsible>
             <h2 className="py-5 text-2xl font-modernAntiqua"> Midgard</h2>
             <div className="flex justify-center items-center flex-col">
-
-            <img
-              className=" rounded-br-[50px] w-[800px]"
-              src="src/assets/images/midgard.jpg"
-              alt=""
-            /> </div>
+              <img
+                className=" rounded-br-[50px] w-[800px]"
+                src="src/assets/images/midgard.jpg"
+                alt=""
+              />{" "}
+            </div>
             <AccordionItem value="item-1">
               <p className="pt-5 text-base font-montserrat leading-7 xs:text-sm">
                 {" "}
@@ -243,12 +239,14 @@ const NorseFull = () => {
                   the Grímnismál, of the Poetic Edda: <br />
                   <br />
                   <span className="italic">
-                  Out of Ymir's flesh was fashioned the earth, And the ocean out
-                  of his blood; Of his bones the hills, of his hair the trees,
-                  Of his skull the heavens high. Mithgarth the gods from his
-                  eyebrows made, And set for the sons of men; And out of his
-                  brain the baleful clouds They made to move on high. <br />
-                  <br /></span>
+                    Out of Ymir's flesh was fashioned the earth, And the ocean
+                    out of his blood; Of his bones the hills, of his hair the
+                    trees, Of his skull the heavens high. Mithgarth the gods
+                    from his eyebrows made, And set for the sons of men; And out
+                    of his brain the baleful clouds They made to move on high.{" "}
+                    <br />
+                    <br />
+                  </span>
                   Having completed Midgard, the gods moved on to creating
                   humankind, starting with the male Ask and female Embla. In the
                   beginning, Ask and Embla were thoughless and emotionless
@@ -336,15 +334,15 @@ const NorseFull = () => {
             </AccordionItem>
           </Accordion>
 
-         <Accordion type="single" collapsible>
+          <Accordion type="single" collapsible>
             <h2 className="py-5 text-2xl font-modernAntiqua"> Jotunheim</h2>
             <div className="flex justify-center items-center flex-col">
-
-            <img
-              className=" rounded-br-[50px] w-[800px]"
-              src="src/assets/images/Jotunheim.jpg"
-              alt=""
-            /> </div>
+              <img
+                className=" rounded-br-[50px] w-[800px]"
+                src="src/assets/images/Jotunheim.jpg"
+                alt=""
+              />{" "}
+            </div>
             <AccordionItem value="item-1">
               <p className="pt-5 text-base font-montserrat leading-7 xs:text-sm">
                 {" "}
@@ -524,17 +522,23 @@ const NorseFull = () => {
                   and be annihilated with all creation.
                   <br />
                   <br />
-                  <span className="text-xl font-bold">Pop Culture </span> <br /><br />
+                  <span className="text-xl font-bold">Pop Culture </span> <br />
+                  <br />
                   Jotunheim has maintained a small presence in popular culture,
                   largely thanks to both Marvel Comics and the Marvel Cinematic
                   Universe. Thor (2011) featured a plotline involving Jotunheim,
-                  here portrayed as a bleak and icy realm. <br /><br />The film began with a
-                  rogue band of frost giants breaking into Asgard’s vault and
-                  attempting to steal a magical item. <br />Not willing to stand for
-                  such insolence, Thor lead a team to Jotunheim to confront
-                  Laufey, king of the frost giants.<br />Thor's mission destroyed a
-                  hard-won peace between the frost giants and the Asgardians,
-                  and Odin banished him to Midgard (Earth) for his recklessness.<br /><br />
+                  here portrayed as a bleak and icy realm. <br />
+                  <br />
+                  The film began with a rogue band of frost giants breaking into
+                  Asgard’s vault and attempting to steal a magical item. <br />
+                  Not willing to stand for such insolence, Thor lead a team to
+                  Jotunheim to confront Laufey, king of the frost giants.
+                  <br />
+                  Thor's mission destroyed a hard-won peace between the frost
+                  giants and the Asgardians, and Odin banished him to Midgard
+                  (Earth) for his recklessness.
+                  <br />
+                  <br />
                   Antarctica's Jotunheim Valley was named for the Norse realm.
                   It is surrounded by a mountain known as Utgard Peak, itself
                   located in the Asgard Range.
@@ -544,7 +548,6 @@ const NorseFull = () => {
           </Accordion>
         </div>
       </div>
-      <Footer></Footer>
     </>
   );
 };

@@ -10,6 +10,7 @@ import HistoricalMap from "./pages/HistoricalMap.tsx";
 import IcelandicFolklore from "./pages/IcelandicFolklore.tsx";
 import { QuizFrontpage } from "./pages/QuizFrontpage.tsx";
 import { QuizLayout } from "./layouts/QuizLayout.tsx";
+import NorseFull from "./pages/norse_myth_extended_description.tsx";
 
 const App: React.FC = () => {
   const [] = useState(0);
@@ -22,6 +23,9 @@ const App: React.FC = () => {
           {/* Norse Mythology Routes */}
           <Route path={"/norse-mythology"} element={<SectionLayout />}>
             <Route index element={<NorseHomepage />} />
+          </Route>
+          <Route path={"/norse-myth-extended"} element={<SectionLayout />}>
+            <Route index element={<NorseFull />} />
           </Route>
 
           {/* Icelandic Folklore Routes */}
