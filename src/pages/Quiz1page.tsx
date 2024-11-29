@@ -3,14 +3,16 @@ import backgroundImage from '../assets/images/QuizViking.jpg';
 import CircleTimer from '../CircleTimer/timer.tsx';
 import { QUIZ_QUESTIONS } from '@/assets/quizQuestions.ts';
 
-
 const Quiz1page = () => {
     const [currQuestion,setCurrQuestion] = useState(0)
     const [points,setPoints] = useState(0)
 
     // Quiz is finished. Start over
-  if(currQuestion > QUIZ_QUESTIONS.length-1) return (<><div>{`YOU NEED TO TRY AGAIN ${points} points`} </div><button onClick={()=>{setPoints(0);setCurrQuestion(0)}}>Reset</button></>)
-
+  if(currQuestion > QUIZ_QUESTIONS.length-1) return (
+  <><div
+  className="w-full max-w-[90%] sm:max-w-[70%] flex flex-col justify-center items-center h-screen bg-cover bg-center gap-4 sm:gap-2 md:gap-6"
+  >
+    {`YOU´RE FINISH. CONGRATULATIONS! ${points} points`} <img src={backgroundImage}/> </div><button onClick={()=>{setPoints(0);setCurrQuestion(0)}}>To start again</button></>)
   
     // update place in the quiz and the score
   const handleOnClick = (isAnswer:boolean) => {
@@ -44,21 +46,21 @@ const Quiz1page = () => {
 
   return (
         <div 
-     className="flex flex-col justify-center items-center h-screen bg-cover bg-center gap-4 sm:gap-2 md:gap-6 border border-white"
+     className="w-full max-w-[90%] sm:max-w-[70%] flex flex-col justify-center items-center h-screen bg-cover bg-center gap-4 sm:gap-2 md:gap-6 border border-white"
         style={{ backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
       }} // Image background
       >
-      <div className="text-[clamp(16px, 4vw, 24px)] text-right w-full pr-4">
+      {/* <div className="text-[clamp(16px, 4vw, 24px)] text-right w-full pr-4">
         X
-      </div>
-      <div className='text-[20px] text-right w-full pr-8 mb-32 mt-48'>X 
+      </div> */}
+      <div className='w-full max-w-[90%] sm:max-w-[70%] text-[20px] text-right pr-8 mb-48 mt-32'>X 
       </div>
 
-      <div className="border border-black w-[364px] h-[6px] -mb-4 bg-white"><br></br>
+      <div className="w-full max-w-[90%] sm:max-w-[70%] border border-black h-[6px] -mb-4 bg-white"><br></br>
       </div>
     
-      <div className="bg-gray-300 text-black p-2 rounded-lg w-[364px] font-[Montserrat] text-left pb-[12px] pl-[21px] text-[16px]" >
+      <div className="bg-gray-300 text-black p-2 rounded-lg font-[Montserrat] text-left pb-[12px] pl-[21px] text-[16px] w-full max-w-[90%] sm:max-w-[70%]" >
         {QUIZ_QUESTIONS[currQuestion].question}
       </div>
 
