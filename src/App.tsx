@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+
 import { SectionLayout } from "./layouts/SectionLayout.tsx";
+import { QuizFrontpage } from "./pages/QuizFrontpage.tsx";
+import { QuizLayout } from "./layouts/QuizLayout.tsx";
+
 import Homepage from "./components/homepage/homepage";
 import NorseHomepage from "./components/NorseHomepage/homepage_comp.tsx";
 import IcelandicFolkHome from "./pages/IcelandicFolkHome.tsx";
 import IcelandicSagas from "./pages/IcelandicSagas.tsx";
 import HistoricalMap from "./pages/HistoricalMap.tsx";
 import IcelandicFolklore from "./pages/IcelandicFolklore.tsx";
-import { QuizFrontpage } from "./pages/QuizFrontpage.tsx";
-import { QuizLayout } from "./layouts/QuizLayout.tsx";
 import NorseFull from "./pages/norse_myth_extended_description.tsx";
 import GodCardsPage from "./pages/godCardsPage.tsx";
-
 
 const App: React.FC = () => {
   const [] = useState(0);
