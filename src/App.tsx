@@ -28,7 +28,7 @@ const App: React.FC = () => {
     <>
       <NavBarComponent></NavBarComponent>
       {/* <IcelandicFolklore /> */}
-      <IcelandicFolklore />
+      <IcelandicSagas />
       <Footer></Footer>
 
       {/*  <Homepage />
