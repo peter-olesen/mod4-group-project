@@ -4,6 +4,12 @@ import { Menu } from "lucide-react";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { NavLink } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../ui/accordion";
 
 const navItems = [
   { name: "Back to Frontpage", path: "/" },
@@ -11,13 +17,13 @@ const navItems = [
 ];
 
 const norseItems = [
-  { name: "Norse Mythology", path: "/norse-mythology" },
-  { name: "Norse Extended", path: "/norse-myth-extended" },
+  { name: "Introduction", path: "/norse-mythology" },
+  { name: "Norse Mythology Guide", path: "/norse-myth-extended" },
   { name: "Gods and creatures", path: "/" },
 ];
 
 const folkloreItems = [
-  { name: "Icelandic Folklore", path: "/icelandic-folklore" },
+  { name: "Introduction", path: "/icelandic-folklore" },
   { name: "Icelandic Sagas", path: "/icelandic-sagas" },
   { name: "Icelandic Historical Map", path: "/historical-map" },
   { name: "Icelandic Blabber", path: "/icelandic-folklore" },
@@ -62,18 +68,61 @@ export function NavBarComponent() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="sm:w-[300px]  ">
-                <div className="flex flex-col  items-center  space-y-4 mt-4 ">
-                  {navItems.map((item) => (
+                <div className="flex flex-col    space-y-4 mt-4 ">
+                 
+                  <div className=" ">
+                  <Accordion type="single" collapsible>
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger className="text-3xl font-modernAntiqua">Norse Mythology</AccordionTrigger>
+                      
+                      <AccordionContent className="font-montserrat text-xl">
+                      {norseItems.map((item) => (
                     <NavLink
                       key={item.name}
                       to={item.path}
-                      className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white  rounded-md text-3xl w-full"
+                      className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white flex flex-col rounded-md text-xl w-full"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}
                     </NavLink>
                   ))}
-                  <h2 className="text-foreground font-modernAntiqua text-2xl">
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                  <Accordion type="single" collapsible>
+                    <AccordionItem value="item-1">
+                    <AccordionTrigger className="text-3xl font-modernAntiqua">Icelandic Folklore</AccordionTrigger>
+              
+                      <AccordionContent className="font-montserrat text-xl">
+
+                      {folkloreItems.map((item) => (
+                    <NavLink
+                      key={item.name}
+                      to={item.path}
+                      className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white flex flex-col  rounded-md text-xl w-full"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </NavLink>
+                  ))}
+                      </AccordionContent>
+                      
+                    </AccordionItem>
+                  </Accordion>
+                  <div className= "flex flex-col">
+                  {navItems.map((item) => (
+                    <NavLink
+                      key={item.name}
+                      to={item.path}
+                      className="text-foreground font-modernAntiqua py-6 active:bg-black active:text-white  rounded-md text-3xl w-full"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </NavLink>
+                  ))}
+                  </div>
+                  </div>
+                  {/* <h2 className="text-foreground font-modernAntiqua text-2xl">
                     Norse Mythology
                   </h2>
                   {norseItems.map((item) => (
@@ -98,7 +147,7 @@ export function NavBarComponent() {
                     >
                       {item.name}
                     </NavLink>
-                  ))}
+                  ))} */}
                 </div>
               </SheetContent>
             </Sheet>

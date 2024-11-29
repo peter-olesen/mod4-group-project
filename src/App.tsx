@@ -8,7 +8,7 @@ import IcelandicFolkHome from "./pages/IcelandicFolkHome.tsx";
 import IcelandicSagas from "./pages/IcelandicSagas.tsx";
 import HistoricalMap from "./pages/HistoricalMap.tsx";
 import IcelandicFolklore from "./pages/IcelandicFolklore.tsx";
-import { QuizFrontpage } from "./pages/QuizFrontpage.tsx";
+// import { QuizFrontpage } from "./pages/QuizFrontpage.tsx";
 import { QuizLayout } from "./layouts/QuizLayout.tsx";
 import NorseFull from "./pages/norse_myth_extended_description.tsx";
 
@@ -43,9 +43,9 @@ const App: React.FC = () => {
           </Route>
 
           {/* Quiz */}
-          <Route path={"/quiz"} element={<QuizLayout />}>
+          {/* <Route path={"/quiz"} element={<QuizLayout />}>
             <Route index element={<QuizFrontpage />} />
-          </Route>
+          </Route> */}
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
