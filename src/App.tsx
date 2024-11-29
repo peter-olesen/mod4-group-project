@@ -4,11 +4,13 @@ import { MainLayout } from "./layouts/MainLayout";
 import { FrontPage } from "./pages/FrontPage.tsx";
 import Quiz1page from "./pages/Quiz1page.tsx";
 import React from 'react';
+import { Timer } from "lucide-react";
+import { QUIZ_QUESTIONS } from "./assets/quizQuestions.ts";
 
 const App: React.FC = () => {
   return (
     <div>
-      <Quiz1page />
+      <Quiz1page/>
       {/* <OrangeButton /> */}
     </div>
   );
