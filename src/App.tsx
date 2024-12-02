@@ -34,9 +34,11 @@ const App: React.FC = () => {
           <Route path={"/gods-creatures"} element={<SectionLayout />}>
             <Route index element={<GodCardsPage />} />
           </Route>
-          <Route path={"/gods-creatures/:name"} element={<SectionLayout />}>
+
+          <Route path={"/gods-creatures/:name"} element={<SectionLayout /> }>
             <Route index element={<Gods />} />
           </Route>
+
 
           {/* Icelandic Folklore Routes */}
           <Route path={"/icelandic-folklore"} element={<SectionLayout />}>
