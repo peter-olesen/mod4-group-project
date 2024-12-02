@@ -72,7 +72,9 @@ const Map = () => {
 
       {selectedRegion && (
         <div className="mt-5 p-4 border border-gray-300 rounded">
-          <h2 className="font-bold pb-5">{selectedRegion.name}</h2>
+          <h2 className="font-bold pb-5 font-modernAntiqua text-center">
+            {selectedRegion.name}
+          </h2>
           <p>{selectedRegion.description}</p>
         </div>
       )}
