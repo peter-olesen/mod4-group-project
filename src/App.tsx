@@ -6,14 +6,14 @@ import { SectionLayout } from "./layouts/SectionLayout";
 import { QuizFrontpage } from "./pages/QuizFrontpage";
 import { QuizLayout } from "./layouts/QuizLayout";
 
-import Homepage from "./components/Homepage/Homepage";
-import NorseHomepage from "./components/NorseHomepage/NorseHomepage";
-import IcelandicFolkHome from "./pages/IcelandicFolkHome";
-import IcelandicSagas from "./pages/IcelandicSagas";
-import HistoricalMap from "./pages/HistoricalMap";
-import IcelandicFolklore from "./pages/IcelandicFolklore";
-import NorseExtended from "./pages/NorseExtended";
-import GodCardsPage from "./pages/GodCardsPage";
+import { Homepage } from "./components/Homepage/Homepage";
+import { NorseHomepage } from "./components/NorseHomepage/NorseHomepage";
+import { IcelandicFolkHome } from "./pages/IcelandicFolkHome";
+import { IcelandicSagas } from "./pages/IcelandicSagas";
+import { HistoricalMap } from "./pages/HistoricalMap";
+import { IcelandicFolklore } from "./pages/IcelandicFolklore";
+import { NorseExtended } from "./pages/NorseExtended";
+import { GodCardsPage } from "./pages/GodCardsPage";
 
 const App: React.FC = () => {
   const [] = useState(0);

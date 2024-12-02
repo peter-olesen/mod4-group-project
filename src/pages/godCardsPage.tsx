@@ -1,9 +1,9 @@
-import NorseGodCards from "@/components/api_norse_myth/cards";
-import ContentButton from "@/components/ui/content_button";
 import { useState } from "react";
-import CreatureList from "@/components/api_norse_myth/creatureList";
+import NorseGodCards from "../components/api_norse_myth/cards";
+import ContentButton from "../components/ui/content_button";
+import CreatureList from "../components/api_norse_myth/creatureList";
 
-const GodCardsPage = () => {
+export const GodCardsPage = () => {
   const [activeComponent, setActiveComponent] = useState<"gods" | "creatures">(
     "gods"
   );
@@ -43,5 +43,3 @@ const GodCardsPage = () => {
     </>
   );
 };
-
-export default GodCardsPage;

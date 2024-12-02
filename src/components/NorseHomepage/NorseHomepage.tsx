@@ -1,6 +1,6 @@
 import ContentButton from "../ui/content_button.tsx";
 
-const NorseHomepage = () => {
+export const NorseHomepage = () => {
   return (
     <>
       <div className="px-5 pt-8">
@@ -45,5 +45,3 @@ const NorseHomepage = () => {
     </>
   );
 };
-
-export default NorseHomepage;

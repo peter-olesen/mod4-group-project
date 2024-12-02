@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button } from "../ui/button";
 
-function Homepage() {
+export const Homepage = () => {
   const navigate = useNavigate();
 
   return (
@@ -27,6 +27,4 @@ function Homepage() {
       </div>
     </>
   );
-}
-
-export default Homepage;
+};

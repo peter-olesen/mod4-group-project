@@ -1,6 +1,6 @@
 import Droplaugarsona from "../assets/images/formated/Dropplaugarsona saga.png";
 //we need cards for this//
-const IcelandicSagas = () => {
+export const IcelandicSagas = () => {
   return (
     <div>
       <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-3 mb-9">
@@ -10,7 +10,3 @@ const IcelandicSagas = () => {
     </div>
   );
 };
-
-export default IcelandicSagas;
-
-//we need cards for this//

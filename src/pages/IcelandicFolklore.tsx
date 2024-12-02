@@ -1,7 +1,7 @@
 import IcelandFolklore from "../assets/images/formated/Icelandicfolkloremain.png";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 
-const IcelandicFolklore = () => {
+export const IcelandicFolklore = () => {
   return (
     <div>
       <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80">
@@ -36,7 +36,3 @@ const IcelandicFolklore = () => {
     </div>
   );
 };
-
-export default IcelandicFolklore;
-
-//we need cards here///
