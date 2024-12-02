@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const NorseFull = () => {
+const NorseExtended = () => {
   return (
     <>
       <div className="mx-5 pt-5 flex justify-center flex-col ">
@@ -552,4 +552,4 @@ const NorseFull = () => {
   );
 };
 
-export default NorseFull;
+export default NorseExtended;

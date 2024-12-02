@@ -1,4 +1,5 @@
 import footerlogo from "../../assets/images/Logo.png";
+
 export const Footer = () => {
   return (
     <>
@@ -12,7 +13,7 @@ export const Footer = () => {
           <div className="w-full max-w-60 h-px bg-gray-300 mb-6"></div>
           {/*Copyright*/}
           <div className="mb-6 text-gray-700">
-            <p>© 2024 Norse Mythology. All Rights Reserved.</p>
+            <p>© 2024 Nordur. All Rights Reserved.</p>
           </div>
           {/*Social Media Icons*/}
           <div className="flex space-x-6">

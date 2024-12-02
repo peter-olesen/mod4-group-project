@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import { NavBarComponent } from "@/components/hamburgerMenu/hamburger";
-import { Footer } from "@/components/Footer/footer";
+import { HamburgerMenu } from "@/components/HamburgerMenu/HamburgerMenu";
+import { Footer } from "@/components/Footer/Footer";
 
 export const SectionLayout = () => {
   return (
     <>
-      <NavBarComponent />
+      <HamburgerMenu />
       <Outlet />
       <Footer />
     </>

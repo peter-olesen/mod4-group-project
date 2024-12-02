@@ -6,14 +6,14 @@ import { SectionLayout } from "./layouts/SectionLayout.tsx";
 import { QuizFrontpage } from "./pages/QuizFrontpage.tsx";
 import { QuizLayout } from "./layouts/QuizLayout.tsx";
 
-import Homepage from "./components/homepage/homepage";
-import NorseHomepage from "./components/NorseHomepage/homepage_comp.tsx";
+import Homepage from "./components/Homepage/Homepage.tsx";
+import NorseHomepage from "./components/NorseHomepage/NorseHomepage.tsx";
 import IcelandicFolkHome from "./pages/IcelandicFolkHome.tsx";
 import IcelandicSagas from "./pages/IcelandicSagas.tsx";
 import HistoricalMap from "./pages/HistoricalMap.tsx";
 import IcelandicFolklore from "./pages/IcelandicFolklore.tsx";
-import NorseFull from "./pages/norse_myth_extended_description.tsx";
-import GodCardsPage from "./pages/godCardsPage.tsx";
+import NorseExtended from "./pages/NorseExtended.tsx";
+import GodCardsPage from "./pages/GodCardsPage.tsx";
 
 const App: React.FC = () => {
   const [] = useState(0);
@@ -27,10 +27,10 @@ const App: React.FC = () => {
           <Route path={"/norse-mythology"} element={<SectionLayout />}>
             <Route index element={<NorseHomepage />} />
           </Route>
-          <Route path={"/norse-myth-extended"} element={<SectionLayout />}>
-            <Route index element={<NorseFull />} />
+          <Route path={"/norse-extended"} element={<SectionLayout />}>
+            <Route index element={<NorseExtended />} />
           </Route>
-          <Route path={"/gods-and-creatures"} element={<SectionLayout />}>
+          <Route path={"/gods-creatures"} element={<SectionLayout />}>
             <Route index element={<GodCardsPage />} />
           </Route>
 
