@@ -1,13 +1,13 @@
 import ContentButton from "../ui/content_button.tsx";
-import norsehomepage from "../assets/images/Homepage_background.png";
-import norsegods from "../assets/images/Norse gods.jpg";
+import norseHomepage from "../../assets/images/Homepage_background.png";
+import norseGods from "../../assets/images/Norse_gods.jpg";
 
 export const NorseHomepage = () => {
   return (
     <>
       <div className="px-5 pt-8">
         <div className=" flex flex-col justify-center items-center ">
-          <img className="" src={norsehomepage} alt="" />
+          <img className="" src={norseHomepage} alt="" />
         </div>
         <div className="flex justify-center flex-col items-center">
           <h2 className="text-xl p-10 text-center font-modernAntiqua">
@@ -31,7 +31,7 @@ export const NorseHomepage = () => {
           <div className="flex justify-center items-center ">
             <img
               className="object-center w-[413px] h-full rounded-br-[50px]"
-              src={norsegods}
+              src={norseGods}
               alt=""
             />
           </div>

@@ -1,4 +1,4 @@
-import background from "../assets/images/QuizFrontPage.jpg";
+import quizBackground from "../assets/images/QuizFrontPage.jpg";
 
 // Styles for the button
 const buttonStyle: React.CSSProperties = {
@@ -17,7 +17,7 @@ const QuizFrontpage = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${background})`, // Background image
+        backgroundImage: `url(${quizBackground})`, // Background image
         height: "100vh", // Full viewport height
         backgroundSize: "cover", // Cover the container
         backgroundPosition: "center", // Center the image
