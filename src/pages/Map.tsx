@@ -22,11 +22,11 @@ const Map = () => {
   };
   return (
     <div>
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-10">
         Historical Map of Icelandic Folklore
       </h1>
       <div className="relative">
-        <img src={MapofIceland} alt="Map of Iceland" className="w-full" />
+        <img src={MapofIceland} alt="Map of Iceland" className="w-full mt-20" />
         {/* Example of clickable regions */}
         <div
           className="absolute top-20 left-40 w-10 bg-blue-500 opacity-50 cursor-pointer"
