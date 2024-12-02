@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
@@ -10,7 +10,7 @@ import { Homepage } from "./components/Homepage/Homepage";
 import { NorseHomepage } from "./components/NorseHomepage/NorseHomepage";
 import { IcelandicFolkHome } from "./pages/IcelandicFolkHome";
 import { IcelandicSagas } from "./pages/IcelandicSagas";
-import { HistoricalMap } from "./pages/HistoricalMap";
+import { Map } from "./pages/Map";
 import { IcelandicFolklore } from "./pages/IcelandicFolklore";
 import { NorseExtended } from "./pages/NorseExtended";
 import { GodCardsPage } from "./pages/GodCardsPage";
@@ -35,10 +35,9 @@ const App: React.FC = () => {
             <Route index element={<GodCardsPage />} />
           </Route>
 
-          <Route path={"/gods-creatures/:name"} element={<SectionLayout /> }>
+          <Route path={"/gods-creatures/:name"} element={<SectionLayout />}>
             <Route index element={<Gods />} />
           </Route>
-
 
           {/* Icelandic Folklore Routes */}
           <Route path={"/icelandic-folklore"} element={<SectionLayout />}>
@@ -48,7 +47,7 @@ const App: React.FC = () => {
             <Route index element={<IcelandicSagas />} />
           </Route>
           <Route path={"/historical-map"} element={<SectionLayout />}>
-            <Route index element={<HistoricalMap />} />
+            <Route index element={<Map />} />
           </Route>
           <Route path={"/iceland-folklore"} element={<SectionLayout />}>
             <Route index element={<IcelandicFolklore />} />

@@ -10,7 +10,7 @@ type Region = {
   position: string;
 };
 
-const Map = () => {
+export const Map = () => {
   const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
 
   const regions: Region[] = [
@@ -81,5 +81,3 @@ const Map = () => {
     </div>
   );
 };
-
-export default Map;
