@@ -58,6 +58,9 @@
   }
 }
 @layer base {
+  p {
+    @apply font-montserrat;
+  }
   /* * {
     @apply border-border;
   body {
