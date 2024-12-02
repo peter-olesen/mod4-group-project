@@ -7,6 +7,7 @@ export const GodCardsPage = () => {
   const [activeComponent, setActiveComponent] = useState<"gods" | "creatures">(
     "gods"
   );
+  
   return (
     <>
       <h1 className="flex flex-col justify-center items-center mt-16 font-newRocker text-3xl">
@@ -35,7 +36,7 @@ export const GodCardsPage = () => {
 
       <div>
         {activeComponent === "gods" ? (
-          <NorseGodCards name="odin" />
+          <NorseGodCards  />
         ) : (
           <CreatureList />
         )}

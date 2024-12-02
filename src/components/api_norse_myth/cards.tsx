@@ -20,6 +20,8 @@ import freyrImg from "../../assets/images/freyr.jpg";
 /*import nerthusImg from "../../assets/images/nerthus.jpg";*/
 import tyrImg from "../../assets/images/formated/Tyr.png";
 /*import njordImg from "../../assets/images/njord.jpg";*/
+import { Link } from "react-router-dom"
+
 type God = {
   __typename: string;
   slug: string;
@@ -31,21 +33,20 @@ type God = {
     title: string;
   };
 };
-type Props = {
-  name: string;
-}
-const NorseGodCards = ({name}: Props)=>{
+
+const NorseGodCards = ()=>{
+  
   const [gods, setGods] = useState<God[]>([]);
   useEffect(() => {
     const getData = async () => {
-      const godUrl = "https://mod4-backend.onrender.com/" + name;
+      const godUrl = "https://mod4-backend.onrender.com/odin";
       const r = await fetch(godUrl);
       const json = await r.json();
       setGods(json.pageProps.topic.collections?.items[0]?.resources?.items || []);
     };
     getData();
   }, []);
-
+  
   const customImages: Record<string, string> = {
     odin: odinImg,
     frigg: friggImg,
@@ -80,12 +81,14 @@ const NorseGodCards = ({name}: Props)=>{
             
             <p className="font-montserrat">{god.tagline}</p>
             <div className=" mt-7">
-              <ContentButton content="See More"></ContentButton>
+              <Link to={`/gods-creatures/${god.title}`}>
+                <ContentButton content="See More"></ContentButton>
+              </Link>
             </div>
           </div>
         ))
       ) : (
-        <p>Loading gods...</p>
+        <p className="flex justify-center mb-16">Loading gods...</p>
       )}
       </div>
     </>
