@@ -1,14 +1,12 @@
-import NorseGodCards from "@/components/api_norse_myth/cards";
-import ContentButton from "@/components/ui/content_button";
 import { useState } from "react";
-import CreatureList from "@/components/api_norse_myth/creatureList";
+import NorseGodCards from "../components/api_norse_myth/cards";
+import ContentButton from "../components/ui/content_button";
+import CreatureList from "../components/api_norse_myth/creatureList";
 
-
-const GodCardsPage = () => {
+export const GodCardsPage = () => {
   const [activeComponent, setActiveComponent] = useState<"gods" | "creatures">(
     "gods"
   );
-  
   return (
     <>
       <h1 className="flex flex-col justify-center items-center mt-16 font-newRocker text-3xl">
@@ -36,14 +34,8 @@ const GodCardsPage = () => {
       </div>
 
       <div>
-        {activeComponent === "gods" ? (
-          <NorseGodCards  />
-        ) : (
-          <CreatureList />
-        )}
+        {activeComponent === "gods" ? <NorseGodCards /> : <CreatureList />}
       </div>
     </>
   );
 };
-
-export default GodCardsPage;

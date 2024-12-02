@@ -1,7 +1,7 @@
 import { useState } from "react";
 import backgroundImage from "../assets/images/QuizViking.jpg";
 // import CircleTimer from '../CircleTimer/timer.tsx';
-import { QUIZ_QUESTIONS } from "@/assets/quizQuestions.ts";
+import { QUIZ_QUESTIONS } from "../assets/quizQuestions.ts";
 
 const Quiz1page = () => {
   const [currQuestion, setCurrQuestion] = useState(0);

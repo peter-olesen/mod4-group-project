@@ -1,7 +1,8 @@
 import Map from "../assets/images/formated/Map of Iceland.png";
 import Timeline from "../assets/images/formated/Timeline.png";
 import Frame from "../assets/images/formated/Frame 17.png";
-const HistoricalMap = () => {
+
+export const HistoricalMap = () => {
   return (
     <div>
       <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80">
@@ -28,4 +29,3 @@ const HistoricalMap = () => {
     </div>
   );
 };
-export default HistoricalMap;

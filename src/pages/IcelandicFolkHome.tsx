@@ -2,7 +2,7 @@ import Droplaugarsona from "../assets/images/formated/Dropplaugarsona saga.png";
 import DroplaugsPlot from "../assets/images/formated/Dropplaugs Plot summary.png";
 import DroplaugsTheme from "../assets/images/formated/Dropplaugs Themes.png";
 
-const IcelandicFolkHome = () => {
+export const IcelandicFolkHome = () => {
   return (
     <div>
       <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-3 mb-9">
@@ -124,5 +124,3 @@ const IcelandicFolkHome = () => {
     </div>
   );
 };
-
-export default IcelandicFolkHome;

@@ -3,9 +3,15 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "../components/ui/accordion";
 
-const NorseExtended = () => {
+import norseBackground from "../assets/images/norse_background.jpg";
+import nineRealms from "../assets/images/nine_realms.jpg";
+import asgard from "../assets/images/asgard.png";
+import midgard from "../assets/images/midgard.jpg";
+import jotunheim from "../assets/images/Jotunheim.jpg";
+
+export const NorseExtended = () => {
   return (
     <>
       <div className="mx-5 pt-5 flex justify-center flex-col ">
@@ -16,7 +22,7 @@ const NorseExtended = () => {
         <div className="flex justify-center items-center ">
           <img
             className=" w-[450px] rounded-br-[50px]"
-            src="src/assets/images/norse_background.jpg"
+            src={norseBackground}
             alt=""
           />
         </div>
@@ -42,7 +48,7 @@ const NorseExtended = () => {
             </h2>
             <img
               className=" w-[450px] rounded-br-[50px]"
-              src="src/assets/images/nine_realms.jpg"
+              src={nineRealms}
               alt=""
             />
           </div>
@@ -60,7 +66,7 @@ const NorseExtended = () => {
               <h2 className="py-5 text-2xl font-modernAntiqua"> Asgard</h2>
               <img
                 className=" rounded-br-[50px] w-[800px]"
-                src="src/assets/images/asgard.png"
+                src={asgard}
                 alt=""
               />{" "}
             </div>
@@ -193,7 +199,7 @@ const NorseExtended = () => {
             <div className="flex justify-center items-center flex-col">
               <img
                 className=" rounded-br-[50px] w-[800px]"
-                src="src/assets/images/midgard.jpg"
+                src={midgard}
                 alt=""
               />{" "}
             </div>
@@ -339,7 +345,7 @@ const NorseExtended = () => {
             <div className="flex justify-center items-center flex-col">
               <img
                 className=" rounded-br-[50px] w-[800px]"
-                src="src/assets/images/Jotunheim.jpg"
+                src={jotunheim}
                 alt=""
               />{" "}
             </div>
@@ -551,5 +557,3 @@ const NorseExtended = () => {
     </>
   );
 };
-
-export default NorseExtended;

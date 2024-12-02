@@ -2,20 +2,19 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
-import { SectionLayout } from "./layouts/SectionLayout.tsx";
-import { QuizFrontpage } from "./pages/QuizFrontpage.tsx";
-import { QuizLayout } from "./layouts/QuizLayout.tsx";
+import { SectionLayout } from "./layouts/SectionLayout";
+import { QuizFrontpage } from "./pages/QuizFrontpage";
+import { QuizLayout } from "./layouts/QuizLayout";
 
-import Homepage from "./components/homepage/homepage.tsx";
-import NorseHomepage from "./components/NorseHomepage/NorseHomepage.tsx";
-import IcelandicFolkHome from "./pages/IcelandicFolkHome.tsx";
-import IcelandicSagas from "./pages/IcelandicSagas.tsx";
-import HistoricalMap from "./pages/HistoricalMap.tsx";
-import IcelandicFolklore from "./pages/IcelandicFolklore.tsx";
-import NorseExtended from "./pages/NorseExtended.tsx";
-import GodCardsPage from "./pages/GodCardsPage.tsx";
-import Gods from "./components/api_norse_myth/gods.tsx"
-
+import { Homepage } from "./components/Homepage/Homepage";
+import { NorseHomepage } from "./components/NorseHomepage/NorseHomepage";
+import { IcelandicFolkHome } from "./pages/IcelandicFolkHome";
+import { IcelandicSagas } from "./pages/IcelandicSagas";
+import { HistoricalMap } from "./pages/HistoricalMap";
+import { IcelandicFolklore } from "./pages/IcelandicFolklore";
+import { NorseExtended } from "./pages/NorseExtended";
+import { GodCardsPage } from "./pages/GodCardsPage";
+import { Gods } from "./components/api_norse_myth/gods";
 
 const App: React.FC = () => {
   const [] = useState(0);
@@ -35,11 +34,9 @@ const App: React.FC = () => {
           <Route path={"/gods-creatures"} element={<SectionLayout />}>
             <Route index element={<GodCardsPage />} />
           </Route>
-          <Route path={"/gods-creatures/:name"} element={<SectionLayout /> }>
+          <Route path={"/gods-creatures/:name"} element={<SectionLayout />}>
             <Route index element={<Gods />} />
           </Route>
-          
-          
 
           {/* Icelandic Folklore Routes */}
           <Route path={"/icelandic-folklore"} element={<SectionLayout />}>
