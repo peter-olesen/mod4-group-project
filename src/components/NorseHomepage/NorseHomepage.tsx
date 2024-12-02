@@ -1,6 +1,6 @@
 import ContentButton from "../ui/content_button.tsx";
 import norseHomepage from "../../assets/images/Homepage_background.png";
-import norseGods from "../../assets/images/Norse_gods.jpg";
+import norseGods from "../../assets/images/norse_gods.jpg";
 
 export const NorseHomepage = () => {
   return (
