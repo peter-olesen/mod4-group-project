@@ -34,11 +34,7 @@ export const GodCardsPage = () => {
       </div>
 
       <div>
-        {activeComponent === "gods" ? (
-          <NorseGodCards name="odin" />
-        ) : (
-          <CreatureList />
-        )}
+        {activeComponent === "gods" ? <NorseGodCards /> : <CreatureList />}
       </div>
     </>
   );
