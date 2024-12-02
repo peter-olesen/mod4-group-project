@@ -31,10 +31,10 @@ type Element = {
 };
 
 
-export const Gods = ()  => {
-  
+export const Gods = () => {
   const [data, setData] = useState<Element[]>([]);
-  const {name} = useParams()
+  const { name } = useParams();
+
   useEffect(() => {
     const getData = async () => {
       const godUrl = "https://mod4-backend.onrender.com/" + name;
@@ -51,6 +51,7 @@ export const Gods = ()  => {
     odin: odinImg,
     frigg: friggImg,
     thor: thorImg,
+
     freya: "https://images.ctfassets.net/m3d2dwoc9jko/66AcmFfbde1dqwxpYdbyUq/b25e281d28fbfc61b287a68bb36e1c7f/freya-norse-goddess-of-fertility.jpg",
     loki: lokiImg,
     baldur: baldurImg,
@@ -61,6 +62,7 @@ export const Gods = ()  => {
     tyr: tyrImg,
     njord: "https://images.ctfassets.net/m3d2dwoc9jko/2D2t9rCCUgAn6UTgv2hXjx/da7c8be697cbffa753498b832c4c0326/njord-norse-god-of-the-sea.jpg"
   }
+
 
   return (
     /*Tekur bara fyrsta p - þarf fleiri
@@ -76,11 +78,16 @@ export const Gods = ()  => {
           className="  max-h-[418px]  rounded-br-[50px] "
           src={customImages[name?.toLowerCase() || "odin"]}
           alt={name} width="400" 
+
         />
       </div>
 
       <div>
-        <Accordion type="single" collapsible className =" font-montserrat text-xl mx-5">
+        <Accordion
+          type="single"
+          collapsible
+          className=" font-montserrat text-xl mx-5"
+        >
           {data.map((element) => {
             {
               element.nodeType === "heading-2" && content_count++;
@@ -88,32 +95,27 @@ export const Gods = ()  => {
 
             return (
               <>
-                <AccordionItem  value={" value - " + content_count } >
+                <AccordionItem value={" value - " + content_count}>
                   {element.nodeType === "heading-2" ? (
-                    <AccordionTrigger >
+                    <AccordionTrigger>
                       {element.content[0].value}
-                      
                     </AccordionTrigger>
-                    
                   ) : null}
-                  <AccordionContent >
-                   
-                    <GodsElement name={element.nodeType} >
+                  <AccordionContent>
+                    <GodsElement name={element.nodeType}>
                       {element.content.map((text) => {
-
                         if (text.value === "Family Tree") {
                           return <></>;
                         }
-                    
+
                         return (
                           <>
                             {text.value}
                             {text.content?.map((t) => t.value)}
-                        
                           </>
                         );
                       })}
-                    </GodsElement>{" "}
+                    </GodsElement>
                   </AccordionContent>
                 </AccordionItem>
               </>
