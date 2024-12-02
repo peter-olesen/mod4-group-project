@@ -3,10 +3,12 @@ import ContentButton from "@/components/ui/content_button";
 import { useState } from "react";
 import CreatureList from "@/components/api_norse_myth/creatureList";
 
+
 const GodCardsPage = () => {
   const [activeComponent, setActiveComponent] = useState<"gods" | "creatures">(
     "gods"
   );
+  
   return (
     <>
       <h1 className="flex flex-col justify-center items-center mt-16 font-newRocker text-3xl">
@@ -35,7 +37,7 @@ const GodCardsPage = () => {
 
       <div>
         {activeComponent === "gods" ? (
-          <NorseGodCards name="odin" />
+          <NorseGodCards  />
         ) : (
           <CreatureList />
         )}

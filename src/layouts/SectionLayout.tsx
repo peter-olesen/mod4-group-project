@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { HamburgerMenu } from "@/components/HamburgerMenu/HamburgerMenu";
-import { Footer } from "@/components/Footer/Footer";
+import { Footer } from "@/components/Footer/footer";
 
 export const SectionLayout = () => {
   return (

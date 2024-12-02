@@ -6,7 +6,7 @@ import { SectionLayout } from "./layouts/SectionLayout.tsx";
 import { QuizFrontpage } from "./pages/QuizFrontpage.tsx";
 import { QuizLayout } from "./layouts/QuizLayout.tsx";
 
-import Homepage from "./components/Homepage/Homepage.tsx";
+import Homepage from "./components/homepage/homepage.tsx";
 import NorseHomepage from "./components/NorseHomepage/NorseHomepage.tsx";
 import IcelandicFolkHome from "./pages/IcelandicFolkHome.tsx";
 import IcelandicSagas from "./pages/IcelandicSagas.tsx";
@@ -14,6 +14,8 @@ import HistoricalMap from "./pages/HistoricalMap.tsx";
 import IcelandicFolklore from "./pages/IcelandicFolklore.tsx";
 import NorseExtended from "./pages/NorseExtended.tsx";
 import GodCardsPage from "./pages/GodCardsPage.tsx";
+import Gods from "./components/api_norse_myth/gods.tsx"
+
 
 const App: React.FC = () => {
   const [] = useState(0);
@@ -33,6 +35,11 @@ const App: React.FC = () => {
           <Route path={"/gods-creatures"} element={<SectionLayout />}>
             <Route index element={<GodCardsPage />} />
           </Route>
+          <Route path={"/gods-creatures/:name"} element={<SectionLayout /> }>
+            <Route index element={<Gods />} />
+          </Route>
+          
+          
 
           {/* Icelandic Folklore Routes */}
           <Route path={"/icelandic-folklore"} element={<SectionLayout />}>
