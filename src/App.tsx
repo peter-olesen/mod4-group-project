@@ -22,13 +22,16 @@ import HistoricalMap from "./pages/HistoricalMap.tsx";
 import IcelandicFolkHome from "./pages/IcelandicFolkHome.tsx";
 import IcelandicSagas from "./pages/IcelandicSagas.tsx";
 import { Footer } from "./components/Footer/footer.tsx";
+import Map from "./pages/Map.tsx";
+import { motion } from "framer-motion";
+
 const App: React.FC = () => {
   const [] = useState(0);
   return (
     <>
       <NavBarComponent></NavBarComponent>
       {/* <IcelandicFolklore /> */}
-      <IcelandicSagas />
+      <Map />
       <Footer></Footer>
 
       {/*  <Homepage />

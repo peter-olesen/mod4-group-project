@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Map from "../assets/images/formated/Map of Iceland.png";
 import Timeline from "../assets/images/formated/Timeline.png";
 import Frame from "../assets/images/formated/Frame 17.png";
+
 const HistoricalMap = () => {
   return (
     <div>

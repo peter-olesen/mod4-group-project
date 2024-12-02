@@ -73,7 +73,7 @@ const IcelandicSagas = () => {
         The Yule Lads are mischievous figures in Icelandic Christmas tradition.
         They are 13 brothers who visit children during the 13 nights leading up
         to Christmas, each with their own unique prank.t into the lives and
-        moral codes of Iceland's early inhabitants.{" "}
+        moral codes of Iceland's early inhabitants.
       </p>
       <hr></hr>
       <img src={Lakeworm} className="m-auto w-60 mt-10" />
