@@ -14,6 +14,10 @@ import Hiddenpeople from "../assets/images/formated/The hidden people.png";
 import Grettissaga from "../assets/images/formated/Grettis saga.png";
 import MountainEyvindur from "../assets/images/formated/Mountain Eyvindur.png";
 
+/* ====================================
+  Cards of Icelandic Folklore and Sagas
+==================================== */
+
 const IcelandicSagas = () => {
   return (
     <div>

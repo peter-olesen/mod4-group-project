@@ -25,6 +25,7 @@ import { Link } from "react-router-dom"
 /*====================================
 Defining the structure of a god object
 ====================================*/ 
+
 type God = {
   __typename: string;
   slug: string;
@@ -41,6 +42,7 @@ const NorseGodCards = ()=>{
   /*=============
     Get the API
   =============*/
+
   const [gods, setGods] = useState<God[]>([]);
   useEffect(() => {
     const getData = async () => {
@@ -55,6 +57,7 @@ const NorseGodCards = ()=>{
   /*==============
     Get the images
   ==============*/
+
   const customImages: Record<string, string> = {
     odin: odinImg,
     frigg: friggImg,
@@ -75,6 +78,7 @@ const NorseGodCards = ()=>{
       {/*=========
            CARDS
          =========*/} 
+
       <div>
       {gods.length > 0 ? (
         gods.map((god: God) => (

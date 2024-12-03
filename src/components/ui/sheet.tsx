@@ -5,6 +5,9 @@ import { X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
+/* ====================================================
+  Sheet/overlay in the Hamburger Menu taken from ShadCn
+==================================================== */
 const Sheet = SheetPrimitive.Root;
 
 const SheetTrigger = SheetPrimitive.Trigger;

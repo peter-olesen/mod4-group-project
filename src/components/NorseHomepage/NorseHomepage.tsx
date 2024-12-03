@@ -2,6 +2,9 @@ import ContentButton from "../ui/content_button.tsx";
 import norseHomepage from "../../assets/images/Homepage_background.png";
 import norseGods from "../../assets/images/norse_gods.jpg";
 import { NavLink } from "react-router-dom";
+/* =======================
+  Norse Mythology Homepage
+======================= */
 
 export const NorseHomepage = () => {
   return (
@@ -27,7 +30,7 @@ export const NorseHomepage = () => {
         </div>
         <div className="py-10">
           <div className="pb-3">
-            <h2 className="text-xl text-left font-modernAntiqua">Norse Gods</h2>
+            <h2 className="text-xl text-left flex justify-center mb-8 font-modernAntiqua">Norse Gods</h2>
           </div>
           <div className="flex justify-center items-center ">
             <img
@@ -36,13 +39,15 @@ export const NorseHomepage = () => {
               alt=""
             />
           </div>
-          <div className="pt-3">
+          <div className="flex justify-center my-16">
             <NavLink to="/gods-creatures">
               <ContentButton content="View collection"></ContentButton>
             </NavLink>
           </div>
+        
         </div>
       </div>
+      <hr />
     </>
   );
 };

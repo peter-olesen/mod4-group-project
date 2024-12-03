@@ -18,7 +18,11 @@ const CreatureList = () =>{
     {name:"Jormungand", about:"In the depths of the ocean, a giant serpent named Jormungandr is biding his time. Prophecies tell us that he will merge at the end of time to destroy the Nine Worlds of Norse mythology, but for now, he is merely waiting…"},
   ]
 
+  /*============================
+  Mapping through the list above
+  ============================*/ 
   return(
+    
     <>
       <div>
         {creatures.map((creature) =>(

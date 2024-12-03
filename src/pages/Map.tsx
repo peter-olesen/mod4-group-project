@@ -10,6 +10,9 @@ type Region = {
   position: string;
 };
 
+/* =====================================
+  Map of Iceland with interactive Stuff!
+===================================== */
 export const Map = () => {
   const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
 

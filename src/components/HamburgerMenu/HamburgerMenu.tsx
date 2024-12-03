@@ -11,6 +11,9 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 
+/* ==================================
+  Navigate through the hamburger menu
+================================== */
 const navItems = [
   { name: "Back to Frontpage", path: "/" },
   { name: "Quiz", path: "/quiz" },
@@ -34,6 +37,9 @@ export function HamburgerMenu() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
+    /* ========
+     The navbar
+    ======== */
     <nav className="bg-background border-b sticky top-0 right-0 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 blur-none">
         <div className="flex items-center justify-between h-16">
@@ -44,11 +50,11 @@ export function HamburgerMenu() {
                 className="h-12 sm:h-10 md:h-12 w-auto object-contain"
               />
             </NavLink>
-            {/* <NavLink to="/" className="flex-shrink-0">
-              <span className="text-2xl font-bold text-primary">Nordur</span>
-            </NavLink> */}
           </div>
 
+          {/* ================
+            The Hamburger Menu
+          ================ */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {norseItems.map((item) => (
@@ -93,10 +99,13 @@ export function HamburgerMenu() {
                   <div className=" ">
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
+
+                        {/* ========================================
+                          Norse mythology Part of the hamburger menu
+                        ======================================== */}
                         <AccordionTrigger className="text-3xl font-modernAntiqua text-white ">
                           Norse Mythology
                         </AccordionTrigger>
-
                         <AccordionContent className="font-montserrat text-xl">
                           {norseItems.map((item) => (
                             <NavLink
@@ -111,12 +120,18 @@ export function HamburgerMenu() {
                         </AccordionContent>
                       </AccordionItem>
                     </Accordion>
+
+                        {/* ===========================================
+                          Icelandic Folklore Part of the hamburger menu
+                        =========================================== */}
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
                         <AccordionTrigger className="text-3xl font-modernAntiqua">
                           Icelandic Folklore
                         </AccordionTrigger>
-
+                          {/*==============
+                          Back to Frontpage
+                        ================== */}
                         <AccordionContent className="font-montserrat text-xl">
                           {folkloreItems.map((item) => (
                             <NavLink
@@ -128,6 +143,9 @@ export function HamburgerMenu() {
                               {item.name}
                             </NavLink>
                           ))}
+                          {/*=====
+                            Quiz
+                          ====== */}
                         </AccordionContent>
                       </AccordionItem>
                     </Accordion>
@@ -144,32 +162,6 @@ export function HamburgerMenu() {
                       ))}
                     </div>
                   </div>
-                  {/* <h2 className="text-foreground font-modernAntiqua text-2xl">
-                    Norse Mythology
-                  </h2>
-                  {norseItems.map((item) => (
-                    <NavLink
-                      key={item.name}
-                      to={item.path}
-                      className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white  rounded-md text-3xl w-full"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.name}
-                    </NavLink>
-                  ))}
-                  <h2 className="text-foreground font-modernAntiqua text-2xl">
-                    Icelandic Folklore
-                  </h2>
-                  {folkloreItems.map((item) => (
-                    <NavLink
-                      key={item.name}
-                      to={item.path}
-                      className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white  rounded-md text-3xl w-full"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.name}
-                    </NavLink>
-                  ))} */}
                 </div>
               </SheetContent>
             </Sheet>

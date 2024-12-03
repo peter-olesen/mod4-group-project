@@ -20,6 +20,10 @@ import freyrImg from "../../assets/images/freyr.jpg";
 import tyrImg from "../../assets/images/formated/Tyr.png";
 /*import njordImg from "../../assets/images/njord.jpg";*/
 
+
+/* ==================================
+  All the things we take from the API
+================================== */
 type Element = {
   nodeType: string;
   content: {
@@ -31,10 +35,12 @@ type Element = {
 };
 
 
+/* ==========
+  Get the API
+========== */
 export const Gods = () => {
   const [data, setData] = useState<Element[]>([]);
   const { name } = useParams();
-
   useEffect(() => {
     const getData = async () => {
       const godUrl = "https://mod4-backend.onrender.com/" + name;
@@ -47,11 +53,14 @@ export const Gods = () => {
 
   let content_count = 1;
 
+  /* ========================
+    Get our images here below
+  ======================== */
+
   const customImages: Record<string, string> = {
     odin: odinImg,
     frigg: friggImg,
     thor: thorImg,
-
     freya: "https://images.ctfassets.net/m3d2dwoc9jko/66AcmFfbde1dqwxpYdbyUq/b25e281d28fbfc61b287a68bb36e1c7f/freya-norse-goddess-of-fertility.jpg",
     loki: lokiImg,
     baldur: baldurImg,
@@ -65,10 +74,9 @@ export const Gods = () => {
 
 
   return (
-    /*Tekur bara fyrsta p - þarf fleiri
-    og
-    þarf að breyta headers og taka þá sérstaklega út til að style-a
-    */
+    /* ===========================================
+      Set up the page and call things from the API
+    =========================================== */
     <>
       <div className="flex justify-center mt-16 mb-6">
         <div className="font-bold font-montserrat text-2xl">{name}</div>
@@ -82,6 +90,9 @@ export const Gods = () => {
         />
       </div>
 
+      {/* ===================
+        Accordion from Shadcn
+      ===================== */}
       <div>
         <Accordion
           type="single"

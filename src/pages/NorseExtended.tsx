@@ -11,6 +11,9 @@ import asgard from "../assets/images/asgard.png";
 import midgard from "../assets/images/midgard.jpg";
 import jotunheim from "../assets/images/Jotunheim.jpg";
 
+/* ========================
+  The Norse Mythology Guide 
+======================== */
 export const NorseExtended = () => {
   return (
     <>

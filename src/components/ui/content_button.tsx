@@ -2,6 +2,10 @@ type Props = {
   content: string,
   onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
+
+/* ===================================
+  Button that the Amazing Gabriel made
+=================================== */
 function ContentButton({content, onClick}: Props) {
   return (
     <>
