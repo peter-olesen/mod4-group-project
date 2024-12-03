@@ -35,7 +35,7 @@ export function HamburgerMenu() {
 
   return (
     <nav className="bg-background border-b sticky top-0 right-0 w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 blur-none">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <NavLink to="/">
@@ -88,12 +88,12 @@ export function HamburgerMenu() {
                   <Menu className="h-6 w-6" aria-hidden="true" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="sm:w-[300px]  ">
+              <SheetContent side="right" className="sm:w-[300px] bg-transparent text-white backdrop-blur-lg ">
                 <div className="flex flex-col    space-y-4 mt-4 ">
                   <div className=" ">
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
-                        <AccordionTrigger className="text-3xl font-modernAntiqua">
+                        <AccordionTrigger className="text-3xl font-modernAntiqua text-white ">
                           Norse Mythology
                         </AccordionTrigger>
 
@@ -102,7 +102,7 @@ export function HamburgerMenu() {
                             <NavLink
                               key={item.name}
                               to={item.path}
-                              className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white flex flex-col rounded-md text-xl w-full"
+                              className="text-foreground font-modernAntiqua px-3 text-white  py-6 active:bg-black active:text-white flex flex-col rounded-md text-xl w-full"
                               onClick={() => setIsOpen(false)}
                             >
                               {item.name}
@@ -122,7 +122,7 @@ export function HamburgerMenu() {
                             <NavLink
                               key={item.name}
                               to={item.path}
-                              className="text-foreground font-modernAntiqua px-3 py-6 active:bg-black active:text-white flex flex-col  rounded-md text-xl w-full"
+                              className="text-foreground font-modernAntiqua px-3 py-6 text-white  active:bg-black active:text-white flex flex-col  rounded-md text-xl w-full"
                               onClick={() => setIsOpen(false)}
                             >
                               {item.name}
@@ -136,7 +136,7 @@ export function HamburgerMenu() {
                         <NavLink
                           key={item.name}
                           to={item.path}
-                          className="text-foreground font-modernAntiqua py-6 active:bg-black active:text-white  rounded-md text-3xl w-full"
+                          className="text-foreground font-modernAntiqua py-6 active:bg-black active:text-white text-white  rounded-md text-3xl w-full"
                           onClick={() => setIsOpen(false)}
                         >
                           {item.name}
