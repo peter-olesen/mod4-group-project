@@ -1,6 +1,7 @@
 import ContentButton from "../ui/content_button.tsx";
 import norseHomepage from "../../assets/images/Homepage_background.png";
 import norseGods from "../../assets/images/norse_gods.jpg";
+import { NavLink } from "react-router-dom";
 
 export const NorseHomepage = () => {
   return (
@@ -36,7 +37,9 @@ export const NorseHomepage = () => {
             />
           </div>
           <div className="pt-3">
-            <ContentButton content="View collection"></ContentButton>
+            <NavLink to="/gods-creatures">
+              <ContentButton content="View collection"></ContentButton>
+            </NavLink>
           </div>
         </div>
       </div>
