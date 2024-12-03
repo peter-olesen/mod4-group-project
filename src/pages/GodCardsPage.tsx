@@ -11,7 +11,7 @@ export const GodCardsPage = () => {
   return (
     <>
       <h1 className="flex flex-col justify-center items-center mt-16 font-newRocker text-3xl">
-        {activeComponent === "gods" ? (
+        {activeComponent  === "gods" ? (
           "Norse Gods"
         ) : (
           <>

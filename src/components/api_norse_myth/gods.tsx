@@ -34,7 +34,6 @@ type Element = {
 export const Gods = () => {
   const [data, setData] = useState<Element[]>([]);
   const { name } = useParams();
-
   useEffect(() => {
     const getData = async () => {
       const godUrl = "https://mod4-backend.onrender.com/" + name;
@@ -51,7 +50,6 @@ export const Gods = () => {
     odin: odinImg,
     frigg: friggImg,
     thor: thorImg,
-
     freya: "https://images.ctfassets.net/m3d2dwoc9jko/66AcmFfbde1dqwxpYdbyUq/b25e281d28fbfc61b287a68bb36e1c7f/freya-norse-goddess-of-fertility.jpg",
     loki: lokiImg,
     baldur: baldurImg,
