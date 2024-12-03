@@ -26,7 +26,6 @@ const folkloreItems = [
   { name: "Introduction", path: "/icelandic-folklore" },
   { name: "Icelandic Sagas", path: "/icelandic-sagas" },
   { name: "Icelandic Historical Map", path: "/historical-map" },
-  { name: "Icelandic Blabber", path: "/icelandic-folklore" },
 ];
 
 import topLogo from "../../assets/images/Logo_nav_bar.png";

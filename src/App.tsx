@@ -9,12 +9,13 @@ import { QuizLayout } from "./layouts/QuizLayout";
 import { Homepage } from "./components/Homepage/Homepage";
 import { NorseHomepage } from "./components/NorseHomepage/NorseHomepage";
 import { IcelandicFolkHome } from "./pages/IcelandicFolkHome";
-import { IcelandicSagas } from "./pages/IcelandicSagas";
+// import { IcelandicSagas } from "./pages/IcelandicSagas";
 import { Map } from "./pages/Map";
 import { IcelandicFolklore } from "./pages/IcelandicFolklore";
 import { NorseExtended } from "./pages/NorseExtended";
 import { GodCardsPage } from "./pages/GodCardsPage";
 import { Gods } from "./components/api_norse_myth/gods";
+import Quiz1page from "./pages/Quiz1page";
 
 const App: React.FC = () => {
   const [] = useState(0);
@@ -41,21 +42,24 @@ const App: React.FC = () => {
 
           {/* Icelandic Folklore Routes */}
           <Route path={"/icelandic-folklore"} element={<SectionLayout />}>
-            <Route index element={<IcelandicFolkHome />} />
+            <Route index element={<IcelandicFolklore />} />
           </Route>
           <Route path={"/icelandic-sagas"} element={<SectionLayout />}>
-            <Route index element={<IcelandicSagas />} />
+            <Route index element={<IcelandicFolkHome />} />
           </Route>
           <Route path={"/historical-map"} element={<SectionLayout />}>
             <Route index element={<Map />} />
           </Route>
-          <Route path={"/iceland-folklore"} element={<SectionLayout />}>
-            <Route index element={<IcelandicFolklore />} />
-          </Route>
+          {/* <Route path={"/icelandic-tales"} element={<SectionLayout />}>
+            <Route index element={<IcelandicFolkHome />} />
+          </Route> */}
 
           {/* Quiz */}
           <Route path={"/quiz"} element={<QuizLayout />}>
             <Route index element={<QuizFrontpage />} />
+          </Route>
+          <Route path={"/quiz-page"} element={<QuizLayout />}>
+            <Route index element={<Quiz1page />} />
           </Route>
         </Routes>
       </BrowserRouter>
