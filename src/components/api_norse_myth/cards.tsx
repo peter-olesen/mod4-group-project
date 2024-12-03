@@ -22,6 +22,9 @@ import tyrImg from "../../assets/images/formated/Tyr.png";
 /*import njordImg from "../../assets/images/njord.jpg";*/
 import { Link } from "react-router-dom"
 
+/*====================================
+Defining the structure of a god object
+====================================*/ 
 type God = {
   __typename: string;
   slug: string;
@@ -35,7 +38,9 @@ type God = {
 };
 
 const NorseGodCards = ()=>{
-  
+  /*=============
+    Get the API
+  =============*/
   const [gods, setGods] = useState<God[]>([]);
   useEffect(() => {
     const getData = async () => {
@@ -47,6 +52,9 @@ const NorseGodCards = ()=>{
     getData();
   }, []);
   
+  /*==============
+    Get the images
+  ==============*/
   const customImages: Record<string, string> = {
     odin: odinImg,
     frigg: friggImg,
