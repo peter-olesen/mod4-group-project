@@ -51,7 +51,7 @@ export function HamburgerMenu() {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {folkloreItems.map((item) => (
+              {norseItems.map((item) => (
                 <NavLink
                   key={item.name}
                   to={item.path}
@@ -60,7 +60,7 @@ export function HamburgerMenu() {
                   {item.name}
                 </NavLink>
               ))}
-              {norseItems.map((item) => (
+              {folkloreItems.map((item) => (
                 <NavLink
                   key={item.name}
                   to={item.path}
