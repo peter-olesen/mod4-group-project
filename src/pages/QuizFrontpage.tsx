@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import quizBackground from "../assets/images/QuizFrontPage.jpg";
 
 // Styles for the button
@@ -24,8 +25,16 @@ const QuizFrontpage = () => {
       }}
     >
       {/* Central content */}
-      <div className="grid place-content-center h-full">
-        <button style={buttonStyle}>WELCOME TO QUIZ</button>
+      <div className="flex items-center justify-center flex-col h-full">
+        <NavLink to="/quiz-page">
+          <button style={buttonStyle}>CLICK TO START THE QUIZ</button>
+        </NavLink>
+        <NavLink
+          to="/"
+          className="text-center font-modernAntiqua text-white bg-black mt-3 rounded-lg w-64"
+        >
+          Go back
+        </NavLink>
       </div>
     </div>
   );

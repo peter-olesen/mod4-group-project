@@ -20,6 +20,10 @@ import freyrImg from "../../assets/images/freyr.jpg";
 import tyrImg from "../../assets/images/formated/Tyr.png";
 /*import njordImg from "../../assets/images/njord.jpg";*/
 
+
+/* ==================================
+  All the things we take from the API
+================================== */
 type Element = {
   nodeType: string;
   content: {
@@ -31,6 +35,9 @@ type Element = {
 };
 
 
+/* ==========
+  Get the API
+========== */
 export const Gods = () => {
   const [data, setData] = useState<Element[]>([]);
   const { name } = useParams();
@@ -45,6 +52,10 @@ export const Gods = () => {
   }, []);
 
   let content_count = 1;
+
+  /* ========================
+    Get our images here below
+  ======================== */
 
   const customImages: Record<string, string> = {
     odin: odinImg,
@@ -63,10 +74,9 @@ export const Gods = () => {
 
 
   return (
-    /*Tekur bara fyrsta p - þarf fleiri
-    og
-    þarf að breyta headers og taka þá sérstaklega út til að style-a
-    */
+    /* ===========================================
+      Set up the page and call things from the API
+    =========================================== */
     <>
       <div className="flex justify-center mt-16 mb-6">
         <div className="font-bold font-montserrat text-2xl">{name}</div>
@@ -80,6 +90,9 @@ export const Gods = () => {
         />
       </div>
 
+      {/* ===================
+        Accordion from Shadcn
+      ===================== */}
       <div>
         <Accordion
           type="single"

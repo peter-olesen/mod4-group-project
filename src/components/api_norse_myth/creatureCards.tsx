@@ -9,9 +9,9 @@ import rataroskr from "../../assets/images/formated/Ratatoskr.png"
 import jormungand from "../../assets/images/formated/Jormungand.png"
 
 /*
-===================
+======================================================================
 THE COMPONENT GOES THROUGH CREATURELIST.TSX AND THAT IS PUT IN APP.TSX
-===================
+======================================================================
 */
 
 type Props = {
@@ -20,6 +20,9 @@ type Props = {
 }
 const CreatureCards = ({ name, about }: Props) =>{
 
+  /* ==============
+    Imported Images
+  ============== */
   const creatureImages: Record<string, string> = {
     berserker: berserker,
     nidhogg: nidhogg,
@@ -32,9 +35,12 @@ const CreatureCards = ({ name, about }: Props) =>{
   } 
 
   const imgUrl = creatureImages[name.toLowerCase()];
-  
+
   return (
     <>
+    {/*========
+      The Cards
+    ========*/}
       <div className="card flex flex-col items-center justify-center my-16 border-b-2 pb-16 mx-5" > 
           {imgUrl && (
             <img 

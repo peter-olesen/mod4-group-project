@@ -3,6 +3,10 @@ import DroplaugsPlot from "../assets/images/formated/Dropplaugs Plot summary.png
 import DroplaugsTheme from "../assets/images/formated/Dropplaugs Themes.png";
 
 export const IcelandicFolkHome = () => {
+
+  /* ============================
+    Hardcoding the Droplaugarsaga
+  ============================ */
   return (
     <div>
       <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-3 mb-9">

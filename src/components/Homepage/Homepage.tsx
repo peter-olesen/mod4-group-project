@@ -4,9 +4,12 @@ import { Button } from "../ui/button";
 
 export const Homepage = () => {
   const navigate = useNavigate();
-
+  /* ===================================================
+    Landing Page - background img, header and two buttons
+  =================================================== */
   return (
     <>
+    
       <div className="relative bg-[url('/src/assets/images/Home.jpg')] h-screen w-[100%] bg-cover bg-center">
         <h1 className="font-newRocker text-5xl text-center py-20">Nordur</h1>
         <div className="absolute bottom-20 flex align-center justify-around w-[100%]">

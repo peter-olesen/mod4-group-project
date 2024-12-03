@@ -11,6 +11,9 @@ type Props = {
 
 const GodsElement = ({ children, name }: Props) => {
 
+  /* ====================================================================
+    Finding out what we want to have on the gods page - not the card page
+  ==================================================================== */ 
   if (name === "heading-2") {
 
 
