@@ -12,7 +12,7 @@ export const Homepage = () => {
     <>
     
       <div className="relative bg-[url('/src/assets/images/Home.jpg')] h-screen w-[100%] bg-cover bg-center">
-        <h1 className="font-newRocker text-5xl text-center py-20  animate-heartbeat">Nordur</h1>
+        <h1 className="font-newRocker text-6xl text-center py-20 animate__animated animate__fadeInDown">Nordur</h1>
         <div className="absolute bottom-20 flex align-center justify-around w-[100%]">
           <Button
             onClick={() => navigate("/norse-mythology")}

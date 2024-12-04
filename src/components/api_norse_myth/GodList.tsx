@@ -46,14 +46,12 @@ const NorseGodCards = ()=>{
       <div>
       {gods.length > 0 ? (
         gods.map((god: God) => (
-          <>
           
           <CreatureCards
           key={god.slug}
           name={god.title}
           about={god.tagline}
           imgsrc={god.image?.url} />
-          </>
 
 
 
