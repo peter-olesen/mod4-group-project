@@ -25,9 +25,9 @@ const CreatureList = () =>{
     
     <>
       <div>
-        {creatures.map((creature) =>(
+        {creatures.map((creature,index) =>(
           <CreatureCards
-          key={creature.name}
+          key={creature.name+index}
           name={creature.name}
           about={creature.about}
           />

@@ -19,6 +19,24 @@ import MountainEyvindur from "../assets/images/formated/Mountain Eyvindur.png";
 ==================================== */
 
 const IcelandicSagas = () => {
+
+  /* const sagas = [
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+    {name:"", about:""},
+  ] */
   return (
     <div>
       <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-3 mb-9">
