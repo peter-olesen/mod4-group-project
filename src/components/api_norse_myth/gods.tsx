@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import GodsElement from "./godsElement.tsx";
+import GodsElement from "./GodsElement";
 import {
   Accordion,
   AccordionContent,

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import NorseGodCards from "../components/api_norse_myth/cards";
+import NorseGodCards from "../components/api_norse_myth/GodList";
 import ContentButton from "../components/ui/content_button";
-import CreatureList from "../components/api_norse_myth/creatureList";
+import CreatureList from "../components/api_norse_myth/CreatureList";
 
 export const GodCardsPage = () => {
   /* ===============================
@@ -16,13 +16,13 @@ export const GodCardsPage = () => {
       {/* ============================
         Display Norse Gods or Creature
       ============================ */}
-      <h1 className="flex flex-col justify-center items-center mt-16 font-newRocker text-3xl">
+      <h1 className="flex flex-col justify-center items-center mt-16 font-newRocker font-semibold  text-3xl">
         {activeComponent  === "gods" ? (
           "Norse Gods"
         ) : (
           <>
             <span>Creatures</span>
-            <span className="text-lg font-semibold mt-2 font-modernAntiqua ">
+            <span className="text-lg font-semibold mt-2 font-newRocker ">
               Power of Wisdom, War and Nature{" "}
             </span>
           </>
