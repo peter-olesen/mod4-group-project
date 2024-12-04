@@ -62,7 +62,7 @@ const NorseGodCards = ()=>{
     odin: odinImg,
     frigg: friggImg,
     thor: thorImg,
-    //freyja: "",
+    //freya: "",
     loki: lokiImg,
     baldur: baldurImg,
     heimdall: heimdallImg,
