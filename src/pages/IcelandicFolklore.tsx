@@ -7,7 +7,7 @@ export const IcelandicFolklore = () => {
     <div>
       <h1
         className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-10 mb-10
-        animate__animated animate__flipInX"
+        animate__animated animate__flipInX text-fire"
       >
         Icelandic Folklore
       </h1>

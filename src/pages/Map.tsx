@@ -54,8 +54,8 @@ export const Map = () => {
   };
   return (
     <div>
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-10 animate__animated animate__flipInX">
-        Historical Map of Iceland
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-10 animate__animated animate__flipInX text-fire">
+        History of Icelandic Folklore
       </h1>
       <div className="relative">
         <img src={MapofIceland} alt="Map of Iceland" className="w-full mt-20" />

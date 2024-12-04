@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Droplaugarsona from "../assets/images/formated/Dropplaugarsona saga.png";
+import Droplaugarsona from "../assets/images/formated/Droplaug2.png";
 import DroplaugsPlot from "../assets/images/formated/Dropplaugs Plot summary.png";
 import DroplaugsTheme from "../assets/images/formated/Dropplaugs Themes.png";
 
 export const IcelandicFolkHome = () => {
   return (
     <div>
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 animate__animated animate__animated animate__flipInX">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 animate__animated animate__animated animate__flipInX text-fire">
         Droplaugarsona Saga
       </h1>
       <img src={Droplaugarsona} className="m-auto w-60" />

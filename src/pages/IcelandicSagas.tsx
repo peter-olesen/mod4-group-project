@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Droplaugarsona from "../assets/images/formated/Dropplaugarsona saga.png";
+import Droplaugarsona from "../assets/images/formated/Droplaug2.png";
 import ContentButton from "@/components/ui/content_button";
 import Deacon from "../assets/images/formated/Deacon of dark river.png";
 import Grýla from "../assets/images/formated/Gryla.png";
@@ -19,11 +19,11 @@ import MountainEyvindur from "../assets/images/formated/Mountain Eyvindur.png";
 const IcelandicSagas = () => {
   return (
     <div>
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-3 mb-9 animate__animated animate__jello">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-3 mb-9 animate__animated animate__jello text-fire">
         Icelandic Sagas
       </h1>
       <img src={Droplaugarsona} className="m-auto w-60 mb-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 animate__heartBeat">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 animate__heartBeat text-fire">
         Droplaugarsona Saga
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -35,7 +35,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Deacon} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 animate__animated animate__swing">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 animate__animated animate__swing text-fire">
         The Deacon of Dark River
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -46,7 +46,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={MountainEyvindur} className="m-auto w-60 mt-10 " />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         Mountain-Eyvindur
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -57,7 +57,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Grýla} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         Grýla
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -67,7 +67,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={YuleLads} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         The Yule Lads
       </h1>
       <p className="font-montserrat mt-11 mx-5 animate__animated animate__fadeInLeft">
@@ -78,7 +78,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Lakeworm} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         The Lake Worm of Lagarfljót
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -88,7 +88,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Trolls} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         Trolls
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -99,7 +99,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Bukolla} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         Búkolla
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -109,7 +109,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={LandWights} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         The Land Wights of Iceland
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -120,7 +120,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Bandamannasaga} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         Bandamanna Saga
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -132,7 +132,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Egilssaga} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl mt-5 mb-9 text-fire">
         Egils Saga
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -144,7 +144,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Hrafnkelssaga} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         Hrafnkels Saga
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -156,7 +156,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={BrennuNjalssaga} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         Brennu-Njáls Saga
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -167,7 +167,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Hiddenpeople} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         The Hidden People
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
@@ -177,7 +177,7 @@ const IcelandicSagas = () => {
       </p>
       <hr></hr>
       <img src={Grettissaga} className="m-auto w-60 mt-10" />
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 text-fire">
         Grettis Saga
       </h1>
       <p className="font-montserrat mt-11 mx-5 mb-10 animate__animated animate__fadeInLeft">
