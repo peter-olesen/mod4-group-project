@@ -73,15 +73,15 @@ const CreatureCards = ({ name, about, imgsrc }: Props) =>{
             src={imgUrl || imgsrc} 
             alt={name} 
             width="200"
-            className="h-60 w-40 rounded-br-[50px] pb-5"
+            className="h-60 w-40 rounded-br-[50px] object-cover	 pb-5"
             />
           )}
           
-          <h2 className="font-semibold text-xl pb-5 font-montserrat">{name}</h2>
+          <h2 className=" pb-5 font-newRocker text-fire text-2xl">{name}</h2>
             
           <p className="font-montserrat">{about}</p>
           <div className=" mt-7">
-            <ContentButton content="See More"></ContentButton>
+            <ContentButton content="Read more"></ContentButton>
           </div>
         </div>
     </>

@@ -18,7 +18,7 @@ export const NorseExtended = () => {
   return (
     <>
       <div className="mx-5 pt-5 flex justify-center flex-col ">
-        <h1 className="font-modernAntiqua text-center object-center text-3xl py-5 xs:text-base">
+        <h1 className=" text-center font-newRocker text-fire text-3xl py-5 xs:text-base">
           {" "}
           Norse Mythology
         </h1>
@@ -46,7 +46,7 @@ export const NorseExtended = () => {
         </div>
         <div className="py-5">
           <div className="flex justify-center items-center py-5 flex-col">
-            <h2 className="text-2xl font-modernAntiqua xs:text-base">
+            <h2 className="font-newRocker text-fire text-2xl pb-4 xs:text-base">
               The Nine Realms
             </h2>
             <img
@@ -66,7 +66,7 @@ export const NorseExtended = () => {
         <div className="py-5 flex justify-center items-center flex-col ">
           <Accordion type="single" collapsible>
             <div className="flex justify-center items-center flex-col">
-              <h2 className="py-5 text-2xl font-modernAntiqua"> Asgard</h2>
+              <h2 className="py-5 font-newRocker text-fire text-2xl"> Asgard</h2>
               <img
                 className=" rounded-br-[50px] w-[800px]"
                 src={asgard}
@@ -198,8 +198,8 @@ export const NorseExtended = () => {
           </Accordion>
 
           <Accordion type="single" collapsible>
-            <h2 className="py-5 text-2xl font-modernAntiqua"> Midgard</h2>
-            <div className="flex justify-center items-center flex-col">
+            <h2 className="py-5 font-newRocker text-fire text-2xl text-center " > Midgard</h2>
+            <div className="flex justify-center items-center  flex-col">
               <img
                 className=" rounded-br-[50px] w-[800px]"
                 src={midgard}
@@ -344,7 +344,7 @@ export const NorseExtended = () => {
           </Accordion>
 
           <Accordion type="single" collapsible>
-            <h2 className="py-5 text-2xl font-modernAntiqua"> Jotunheim</h2>
+            <h2 className="py-5 font-newRocker text-fire text-2xl text-center"> Jotunheim</h2>
             <div className="flex justify-center items-center flex-col">
               <img
                 className=" rounded-br-[50px] w-[800px]"
