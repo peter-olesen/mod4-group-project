@@ -11,15 +11,15 @@ import ContentButton from "../ui/content_button";
 import odinImg from "../../assets/images/formated/Odin.png";
 import friggImg from "../../assets/images/formated/Frigg.png";
 import thorImg from "../../assets/images/Thor.jpg";
-/*import freyjaImg from "../../assets/images/freyja.jpg";*/
+import freyjaImg from "../../assets/images/formated/Freyja.png";
 import lokiImg from "../../assets/images/loki.jpg";
 import baldurImg from "../../assets/images/formated/Baldur.png";
 import heimdallImg from "../../assets/images/formated/Heimdall.png";
-/*import idunImg from "../../assets/images/idun.jpg";*/
+import idunImg from "../../assets/images/idun.png";
 import freyrImg from "../../assets/images/freyr.jpg";
-/*import nerthusImg from "../../assets/images/nerthus.jpg";*/
+import nerthusImg from "../../assets/images/nerthus.png"
 import tyrImg from "../../assets/images/formated/Tyr.png";
-/*import njordImg from "../../assets/images/njord.jpg";*/
+import njordImg from "../../assets/images/njord.png";
 import { Link } from "react-router-dom"
 
 /*====================================
@@ -62,15 +62,15 @@ const NorseGodCards = ()=>{
     odin: odinImg,
     frigg: friggImg,
     thor: thorImg,
-    //freyja: "",
+    freya: freyjaImg,
     loki: lokiImg,
     baldur: baldurImg,
     heimdall: heimdallImg,
-    //idun: idunImg,
+    idun: idunImg,
     freyr: freyrImg,
-    //nerthus: nerthusImg,
+    nerthus: nerthusImg,
     tyr: tyrImg,
-    //njord: njordImg
+    njord: njordImg
   }
   return(
     <>
@@ -87,7 +87,7 @@ const NorseGodCards = ()=>{
               <img 
               src={customImages[god.slug] || god.image?.url} 
               alt={god.image?.title || god.title} width="200" 
-              className="h-60 w-40 rounded-br-[50px] pb-5"/>
+              className="h-60 w-40 rounded-br-[50px] object-cover pb-5"/>
             )}
             <h2 className="font-semibold text-xl pb-5 font-montserrat">{god.title}</h2>
             
