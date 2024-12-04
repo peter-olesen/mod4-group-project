@@ -15,7 +15,7 @@ export const NorseHomepage = () => {
           <img className="" src={norseHomepage} alt="" />
         </div>
         <div className="flex justify-center flex-col items-center">
-          <h2 className="text-xl py-9 text-center font-modernAntiqua animate__animated animate__flipInX">
+          <h2 className=" py-9 text-center font-newRocker text-fire text-2xl animate__animated animate__flipInX">
             Norse mythology introduction
           </h2>
           <p className="font-montserrat text-base leading-7 animate__animated animate__fadeInLeft">
@@ -29,9 +29,9 @@ export const NorseHomepage = () => {
             mortals.
           </p>
         </div>
-        <div className="py-10">
+        <div className="py-5">
           <div className="pb-3">
-            <h2 className="text-xl text-left flex justify-center mb-8 font-modernAntiqua">Norse Gods</h2>
+            <h2 className=" flex justify-center mb-8 font-newRocker text-fire text-2xl">Norse Gods</h2>
           </div>
           <div className="flex justify-center items-center ">
             <img
