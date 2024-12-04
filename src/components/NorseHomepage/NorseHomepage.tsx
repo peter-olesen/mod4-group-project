@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 /* =======================
   Norse Mythology Homepage
 ======================= */
-import NorseGodCards  from "../api_norse_myth/cards.tsx";
+import NorseGodCards  from "../api_norse_myth/GodList.tsx";
 
 export const NorseHomepage = () => {
   return (

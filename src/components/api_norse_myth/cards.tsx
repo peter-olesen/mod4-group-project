@@ -1,13 +1,12 @@
-/*
-================================
-EVERYTHING THAT IS COMMENTED OUT IN IMG AND CUSTOMIMAGES ARE IMGS WE NEED IF WE GET THEM THEN WE CAN COMMENT THEM OUT
-AND WATCH OUT TO CHANGE TO JPG OR PNG WHERE APPROPRIATE - OR WE DONT HAVE THEM BUT THEN THE API WILL TAKE CARE
-OF THOSE IMG
-================================
-*/ 
-
-import { useEffect, useState } from "react";
-import ContentButton from "../ui/content_button";
+import ContentButton from "../ui/content_button"
+import berserker from "../../assets/images/formated/Berserker.png"
+import nidhogg from "../../assets/images/formated/Nidhogg.png"
+import valkyrie from "../../assets/images/formated/Valkyrie.png"
+import fenrir from "../../assets/images/formated/Fenrir.png"
+import ymir from "../../assets/images/formated/Ymir.png"
+import sleipnir from "../../assets/images/formated/Sleipnir.png"
+import rataroskr from "../../assets/images/formated/Ratatoskr.png"
+import jormungand from "../../assets/images/formated/Jormungand.png"
 import odinImg from "../../assets/images/formated/Odin.png";
 import friggImg from "../../assets/images/formated/Frigg.png";
 import thorImg from "../../assets/images/Thor.jpg";
@@ -20,45 +19,32 @@ import freyrImg from "../../assets/images/freyr.jpg";
 import nerthusImg from "../../assets/images/nerthus.png"
 import tyrImg from "../../assets/images/formated/Tyr.png";
 import njordImg from "../../assets/images/njord.png";
-import { Link } from "react-router-dom"
 
-/*====================================
-Defining the structure of a god object
-====================================*/ 
+/*
+======================================================================
+THE COMPONENT GOES THROUGH CREATURELIST.TSX AND THAT IS PUT IN APP.TSX
+======================================================================
+*/
 
-type God = {
-  __typename: string;
-  slug: string;
-  title: string;
-  subtitle: string;
-  tagline: string;
-  image?: {
-    url: string;
-    title: string;
-  };
-};
+type Props = {
+  name: string,
+  about: string,
+  imgsrc?: string
+}
+const CreatureCards = ({ name, about, imgsrc }: Props) =>{
 
-const NorseGodCards = ()=>{
-  /*=============
-    Get the API
-  =============*/
-
-  const [gods, setGods] = useState<God[]>([]);
-  useEffect(() => {
-    const getData = async () => {
-      const godUrl = "https://mod4-backend.onrender.com/odin";
-      const r = await fetch(godUrl);
-      const json = await r.json();
-      setGods(json.pageProps.topic.collections?.items[0]?.resources?.items || []);
-    };
-    getData();
-  }, []);
-  
-  /*==============
-    Get the images
-  ==============*/
-
-  const customImages: Record<string, string> = {
+  /* ==============
+    Imported Images
+  ============== */
+  const images: Record<string, string> = {
+    berserker: berserker,
+    nidhogg: nidhogg,
+    valkyrie: valkyrie,
+    fenrir: fenrir,
+    ymir: ymir,
+    sleipnir: sleipnir,
+    rataroskr: rataroskr,
+    jormungand: jormungand,
     odin: odinImg,
     frigg: friggImg,
     thor: thorImg,
@@ -71,39 +57,33 @@ const NorseGodCards = ()=>{
     nerthus: nerthusImg,
     tyr: tyrImg,
     njord: njordImg
-  }
-  return(
-    <>
-      
-      {/*=========
-           CARDS
-         =========*/} 
+  } 
 
-      <div>
-      {gods.length > 0 ? (
-        gods.map((god: God) => (
-          <div key={god.slug} className="card flex flex-col items-center justify-center my-16 border-b-2 pb-16 mx-5" >
-              {(customImages[god.slug] || god.image?.url) && (
-              <img 
-              src={customImages[god.slug] || god.image?.url} 
-              alt={god.image?.title || god.title} width="200" 
-              className="h-60 w-40 rounded-br-[50px] object-cover pb-5"/>
-            )}
-            <h2 className="font-semibold text-xl pb-5 font-montserrat">{god.title}</h2>
+  const imgUrl = images[name.toLowerCase()];
+
+  return (
+    <>
+    {/*========
+      The Cards
+    ========*/}
+      <div className="card flex flex-col items-center justify-center my-16 border-b-2 pb-16 mx-5" > 
+          {(imgsrc || imgUrl ) && (
+            <img 
+            src={imgUrl || imgsrc} 
+            alt={name} 
+            width="200"
+            className="h-60 w-40 rounded-br-[50px] pb-5"
+            />
+          )}
+          
+          <h2 className="font-semibold text-xl pb-5 font-montserrat">{name}</h2>
             
-            <p className="font-montserrat">{god.tagline}</p>
-            <div className=" mt-7">
-              <Link to={`/gods-creatures/${god.title}`}>
-                <ContentButton content="See More"></ContentButton>
-              </Link>
-            </div>
+          <p className="font-montserrat">{about}</p>
+          <div className=" mt-7">
+            <ContentButton content="See More"></ContentButton>
           </div>
-        ))
-      ) : (
-        <p className="flex justify-center mb-16">Loading gods...</p>
-      )}
-      </div>
+        </div>
     </>
   )
 }
-export default NorseGodCards
+export default CreatureCards
