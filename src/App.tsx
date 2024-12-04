@@ -53,6 +53,9 @@ const App: React.FC = () => {
           <Route path={"/icelandic-folklore"} element={<SectionLayout />}>
             <Route index element={<IcelandicFolklore />} />
           </Route>
+          <Route path={"/icelandic-folkhome"} element={<SectionLayout />}>
+            <Route index element={<IcelandicFolkHome />} />
+          </Route>
           <Route path={"/icelandic-sagas"} element={<SectionLayout />}>
             <Route index element={<IcelandicSagas />} />
           </Route>
