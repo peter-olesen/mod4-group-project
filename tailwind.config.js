@@ -23,9 +23,7 @@ export default {
         custom: "50px",
       },
       colors: {
-        
-          fire: '#FF4500', 
-        
+        fire: "#FF4500",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -104,4 +102,7 @@ export default {
     //Iconify plugin
     addDynamicIconSelectors(),
   ],
+  
 };
+
+
