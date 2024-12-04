@@ -14,7 +14,7 @@ import { Homepage } from "./components/Homepage/Homepage";
 import { NorseHomepage } from "./components/NorseHomepage/NorseHomepage";
 import { NorseExtended } from "./pages/NorseExtended";
 import { GodCardsPage } from "./pages/GodCardsPage";
-import { Gods } from "./components/api_norse_myth/gods";
+import { Gods } from "./components/api_norse_myth/Gods.tsx";
 
 // Icelandic Folklore Imports
 import { IcelandicFolkHome } from "./pages/IcelandicFolkHome";

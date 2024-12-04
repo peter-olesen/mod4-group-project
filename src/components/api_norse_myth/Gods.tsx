@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import GodsElement from "./godsElement.tsx";
+import GodsElement from "./GodsElement";
 import {
   Accordion,
   AccordionContent,
@@ -7,18 +7,19 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useParams } from "react-router-dom";
+
 import odinImg from "../../assets/images/formated/Odin.png";
 import friggImg from "../../assets/images/formated/Frigg.png";
 import thorImg from "../../assets/images/Thor.jpg";
-/*import freyjaImg from "../../assets/images/freyja.jpg";*/
+import freyjaImg from "../../assets/images/formated/Freyja.png";
 import lokiImg from "../../assets/images/loki.jpg";
 import baldurImg from "../../assets/images/formated/Baldur.png";
 import heimdallImg from "../../assets/images/formated/Heimdall.png";
-/*import idunImg from "../../assets/images/idun.jpg";*/
+import idunImg from "../../assets/images/idun.png";
 import freyrImg from "../../assets/images/freyr.jpg";
-/*import nerthusImg from "../../assets/images/nerthus.jpg";*/
+import nerthusImg from "../../assets/images/nerthus.png";
 import tyrImg from "../../assets/images/formated/Tyr.png";
-/*import njordImg from "../../assets/images/njord.jpg";*/
+import njordImg from "../../assets/images/njord.png";
 
 
 /* ==================================
@@ -61,15 +62,15 @@ export const Gods = () => {
     odin: odinImg,
     frigg: friggImg,
     thor: thorImg,
-    freya: "https://images.ctfassets.net/m3d2dwoc9jko/66AcmFfbde1dqwxpYdbyUq/b25e281d28fbfc61b287a68bb36e1c7f/freya-norse-goddess-of-fertility.jpg",
+    freya: freyjaImg,
     loki: lokiImg,
     baldur: baldurImg,
     heimdall: heimdallImg,
-    idun:"https://images.ctfassets.net/m3d2dwoc9jko/5OhytnGmpLEaQPf9zJcCrd/8c52cc6dc3c722d6cc7d1a7b064df620/idun-norse-goddess-of-youth.jpg",
+    idun:idunImg,
     freyr: freyrImg,
-    nerthus: "https://images.ctfassets.net/m3d2dwoc9jko/4rMiWaSWRNJ6SBSJTIH7Ow/6fd445e4e848f9d9c1c810ebd6992b32/nerthus-norse-goddess-emil-doepler-circa-1905.jpg",
+    nerthus: nerthusImg,
     tyr: tyrImg,
-    njord: "https://images.ctfassets.net/m3d2dwoc9jko/2D2t9rCCUgAn6UTgv2hXjx/da7c8be697cbffa753498b832c4c0326/njord-norse-god-of-the-sea.jpg"
+    njord: njordImg
   }
 
 
@@ -79,7 +80,7 @@ export const Gods = () => {
     =========================================== */
     <>
       <div className="flex justify-center mt-16 mb-6">
-        <div className="font-bold font-montserrat text-2xl">{name}</div>
+        <div className="font-newRocker text-fire text-4xl">{name}</div>
       </div>
       <div className="flex h-[418px] mb-10 w-auto justify-center items-center ">
         <img
@@ -108,7 +109,7 @@ export const Gods = () => {
               <>
                 <AccordionItem value={" value - " + content_count}>
                   {element.nodeType === "heading-2" ? (
-                    <AccordionTrigger>
+                    <AccordionTrigger className="font-newRocker text-fire text-2xl">
                       {element.content[0].value}
                     </AccordionTrigger>
                   ) : null}

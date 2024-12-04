@@ -5,7 +5,7 @@ import Frame from "../assets/images/formated/Frame 17.png";
 export const HistoricalMap = () => {
   return (
     <div>
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80">
+      <h1 className="font-newRocker font-semibold  text-center m-auto text-3xl w-80">
         History of Icelandic Folklore
       </h1>
       <div className="flex items-center flex-col">

@@ -1,4 +1,4 @@
-import CreatureCards from "./creatureCards";
+import CreatureCards from "./Cards";
 
 const CreatureList = () =>{
 

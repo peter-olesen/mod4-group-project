@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 /* =======================
   Norse Mythology Homepage
 ======================= */
+import NorseGodCards  from "../api_norse_myth/GodList.tsx";
 
 export const NorseHomepage = () => {
   return (
@@ -14,10 +15,10 @@ export const NorseHomepage = () => {
           <img className="" src={norseHomepage} alt="" />
         </div>
         <div className="flex justify-center flex-col items-center">
-          <h2 className="text-xl p-10 text-center font-modernAntiqua">
+          <h2 className=" py-9 text-center font-newRocker text-fire text-2xl animate__animated animate__flipInX">
             Norse mythology introduction
           </h2>
-          <p className="font-montserrat text-base leading-7">
+          <p className="font-montserrat text-base leading-7 animate__animated animate__fadeInLeft">
             Norse mythology is a collection of ancient Scandinavian stories
             about the origins of the world, nature, and the fate of the cosmos.
             It tells of gods, giants, and other mythical beings living in realms
@@ -28,9 +29,9 @@ export const NorseHomepage = () => {
             mortals.
           </p>
         </div>
-        <div className="py-10">
+        <div className="py-5">
           <div className="pb-3">
-            <h2 className="text-xl text-left flex justify-center mb-8 font-modernAntiqua">Norse Gods</h2>
+            <h2 className=" flex justify-center mb-8 font-newRocker text-fire text-2xl">Norse Gods</h2>
           </div>
           <div className="flex justify-center items-center ">
             <img
@@ -46,6 +47,8 @@ export const NorseHomepage = () => {
           </div>
         
         </div>
+        <NorseGodCards/>
+
       </div>
       <hr />
     </>
