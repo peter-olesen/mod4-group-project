@@ -15,7 +15,7 @@ import BrennuNjalssaga from "../assets/images/formated/Brennu Njáls saga.png";
 import Hiddenpeople from "../assets/images/formated/The hidden people.png";
 import Grettissaga from "../assets/images/formated/Grettis saga.png";
 import MountainEyvindur from "../assets/images/formated/Mountain Eyvindur.png";
-import "animate.css";
+
 const IcelandicSagas = () => {
   return (
     <div>

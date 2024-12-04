@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MapofIceland from "../assets/images/iceland_amo_2020226_lrg.jpg";
-import "animate.css";
+
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
 type Region = {
