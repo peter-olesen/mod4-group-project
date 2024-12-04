@@ -3,8 +3,6 @@ import NorseGodCards from "../components/api_norse_myth/cards";
 import ContentButton from "../components/ui/content_button";
 import CreatureList from "../components/api_norse_myth/creatureList";
 
-
-
 export const GodCardsPage = () => {
   /* ===============================
     Either display Gods or Creatures
@@ -20,13 +18,11 @@ export const GodCardsPage = () => {
       ============================ */}
       <h1 className="flex flex-col justify-center items-center mt-16 font-newRocker text-3xl">
         {activeComponent  === "gods" ? (
-      <h1 className="flex flex-col justify-center items-center mt-16 font-newRocker text-3xl ">
-        {activeComponent === "gods" ? (
           "Norse Gods"
         ) : (
           <>
             <span>Creatures</span>
-            <span className="text-lg font-semibold mt-2 font-modernAntiqua a">
+            <span className="text-lg font-semibold mt-2 font-modernAntiqua ">
               Power of Wisdom, War and Nature{" "}
             </span>
           </>
