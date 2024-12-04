@@ -23,6 +23,7 @@ import njordImg from "../../assets/images/njord.png";
 /*
 ======================================================================
 THE COMPONENT GOES THROUGH CREATURELIST.TSX AND THAT IS PUT IN APP.TSX
+qwerqwerqx
 ======================================================================
 */
 
