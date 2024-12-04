@@ -21,7 +21,7 @@ import MountainEyvindur from "../assets/images/formated/Mountain Eyvindur.png";
 const IcelandicSagas = () => {
   return (
     <div>
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-3 mb-9">
+      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-3 mb-9 animate__animated animate__jello">
         Icelandic Sagas
       </h1>
       <img src={Droplaugarsona} className="m-auto w-60 mb-10" />
