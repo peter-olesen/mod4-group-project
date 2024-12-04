@@ -6,7 +6,7 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 type Region = {
   id: string;
   name: string;
-  description: string;
+  description: string; 
   color: string;
   geolocation?: string;
   position: string;
@@ -81,7 +81,7 @@ export const Map = () => {
           <h2 className="font-bold pb-5 font-modernAntiqua text-center">
             {selectedRegion.name}
           </h2>
-          <p>{selectedRegion.description}</p>
+          <p className="font-montserrat">{selectedRegion.description}</p>
         </div>
       )}
     </div>

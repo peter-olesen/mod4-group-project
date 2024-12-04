@@ -102,7 +102,7 @@ export default {
     //Iconify plugin
     addDynamicIconSelectors(),
   ],
-  
+
 };
 
 
