@@ -4,16 +4,18 @@ import { Button } from "@/components/ui/button";
 
 export const IcelandicFolklore = () => {
   return (
-    <div>
-      <h1
-        className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-10 mb-10
+    <div className="flex flex-col">
+      <h1 className="font-newRocker text-center m-auto text-2xl w-80 mt-10 mb-10
         animate__animated animate__flipInX text-fire"
       >
         Icelandic Folklore
       </h1>
-      <img src={IcelandFolklore} />
+      <img src={IcelandFolklore} className="mx-16" />
       <p className="font-montserrat mt-11 mx-5 animate__animated animate__fadeInLeft">
-        <b>Icelandic folklore</b> is a rich tapestry of myths and legends deeply
+      <span className="text-3xl xs:text-base font-modernAntiqua">
+        Icelandic
+      </span>{" "}
+         folklore is a rich tapestry of myths and legends deeply
         influenced by the country’s rugged landscapes and Norse roots. It
         includes tales of huldufólk (hidden people) and elves, thought to live
         invisibly alongside humans and connected to Iceland's natural landmarks.
@@ -41,5 +43,3 @@ export const IcelandicFolklore = () => {
     </div>
   );
 };
-
-//we need cards here///
