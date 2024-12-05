@@ -5,6 +5,7 @@ import DroplaugsTheme from "../assets/images/formated/Dropplaugs Themes.png";
 /* ============================
     Hardcoding the Droplaugarsaga
   ============================ */
+  
 export const IcelandicFolkHome = () => {
   return (
     <div>

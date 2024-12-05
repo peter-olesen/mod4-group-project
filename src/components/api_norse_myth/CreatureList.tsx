@@ -61,6 +61,7 @@ const CreatureList = () => {
           name={creature.name}
           about={creature.about}
           index={index}
+          baseUrl={"/gods-creatures/"}
           />
         ))}
       </div>

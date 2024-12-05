@@ -61,6 +61,7 @@ return (
             name={saga.name}
             about={saga.about}
             index={index}
+            baseUrl={"/icelandic-folkhome/"} 
             />
         ))}
     </div>

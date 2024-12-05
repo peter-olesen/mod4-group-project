@@ -49,9 +49,10 @@ type Props = {
   name: string;
   about: string;
   imgsrc?: string;
-  index: number
+  index: number;
+  baseUrl: string;
 };
-const CreatureCards = ({ name, about, imgsrc, index }: Props) => {
+const CreatureCards = ({baseUrl, name, about, imgsrc, index }: Props) => {
   /* ==============
     Imported Images
   ============== */
@@ -133,7 +134,7 @@ const CreatureCards = ({ name, about, imgsrc, index }: Props) => {
 
         <p className="font-montserrat">{about}</p>
         <div className=" mt-7 ">
-          <Link to={"/gods-creatures/" + name}>
+          <Link to={baseUrl + name}>
             <ContentButton content="Read more"></ContentButton>
           </Link>
         </div>
