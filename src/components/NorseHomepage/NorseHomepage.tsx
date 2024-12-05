@@ -29,7 +29,7 @@ export const NorseHomepage = () => {
             mortals.
           </p>
         </div>
-        <div className="py-5">
+        <div className="pt-5">
           <div className="pb-3">
             <h2 className=" flex justify-center mb-8 font-newRocker text-fire text-2xl">Norse Gods</h2>
           </div>
@@ -40,7 +40,7 @@ export const NorseHomepage = () => {
               alt=""
             />
           </div>
-          <div className="flex justify-center my-16">
+          <div className="flex justify-center my-8">
             <NavLink to="/gods-creatures">
               <ContentButton content="View collection"></ContentButton>
             </NavLink>

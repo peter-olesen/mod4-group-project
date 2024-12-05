@@ -40,7 +40,7 @@ export function HamburgerMenu() {
     /* ========
      The navbar
     ======== */
-    <nav className="bg-background border-b sticky top-0 right-0 w-full">
+    <nav className="bg-background border-b sticky top-0 right-0 w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 blur-none">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
