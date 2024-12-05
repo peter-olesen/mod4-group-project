@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import IcelandFolklore from "/src/assets/images/Iceland_back.jpg";
+import { Button } from "@/components/ui/button";
 
 /* ====================================
     Hardcoded Icelandic Folklore Homepage
@@ -31,7 +32,7 @@ export const IcelandicFolklore = () => {
         This folklore weaves together elements of nature, magic, and mystery,
         capturing Iceland’s unique spirit and cultural heritage.
       </p>
-      <p className="font-montserrat mt-20"></p>
+      <p className="font-montserrat mt-10"></p>
       <NavLink to="/icelandic-sagas">
         <Button variant={"outline"} className="font-light animate__bounceIn">
           Read more tales here
