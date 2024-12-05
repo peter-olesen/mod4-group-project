@@ -100,7 +100,7 @@ export const Gods = () => {
           collapsible
           className=" font-montserrat text-xl mx-5"
         >
-          {data.map((element) => {
+          {data.map((element,index)  => {
             {
               element.nodeType === "heading-2" && content_count++;
             }
@@ -114,11 +114,10 @@ export const Gods = () => {
                     </AccordionTrigger>
                   ) : null}
                   <AccordionContent>
-                    <GodsElement name={element.nodeType}>
+                    <GodsElement name={element.nodeType} >
                       {element.content.map((text) => {
-                        if (text.value === "Family Tree") {
-                          return <></>;
-                        }
+                        if (text.value === "Family Tree") return <></>;
+                        
 
                         return (
                           <>

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import 'animate.css';
+import "animate.css";
 
-import { Button } from "../ui/button";
+import { Button } from "../components/ui/button";
 
 export const Homepage = () => {
   const navigate = useNavigate();
@@ -10,9 +10,10 @@ export const Homepage = () => {
   =================================================== */
   return (
     <>
-    
       <div className="relative bg-[url('/src/assets/images/Home.jpg')] h-screen w-[100%] bg-cover bg-center">
-        <h1 className="font-newRocker text-6xl text-center py-20 animate__animated animate__fadeInDown">Nordur</h1>
+        <h1 className="font-newRocker text-6xl text-center py-20 animate__animated animate__fadeInDown">
+          Nordur
+        </h1>
         <div className="absolute bottom-20 flex align-center justify-around w-[100%]">
           <Button
             onClick={() => navigate("/norse-mythology")}
@@ -28,9 +29,7 @@ export const Homepage = () => {
             Icelandic Folklore
           </Button>
         </div>
-
       </div>
-
     </>
   );
 };

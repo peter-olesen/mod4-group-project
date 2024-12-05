@@ -55,11 +55,11 @@ const CreatureList = () => {
   return (
     <>
       <div>
-        {creatures.map((creature) => (
+        {creatures.map((creature,index) =>(
           <CreatureCards
-            key={creature.name}
-            name={creature.name}
-            about={creature.about}
+          key={creature.name+index}
+          name={creature.name}
+          about={creature.about}
           />
         ))}
       </div>

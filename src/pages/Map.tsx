@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MapofIceland from "../assets/images/iceland_amo_2020226_lrg.jpg";
 
 import { Tooltip as ReactTooltip } from "react-tooltip";
@@ -6,12 +6,15 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 type Region = {
   id: string;
   name: string;
-  description: string; 
+  description: string;
   color: string;
   geolocation?: string;
   position: string;
 };
 
+/* =====================================
+  Map of Iceland with interactive Stuff!
+===================================== */
 export const Map = () => {
   const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
 

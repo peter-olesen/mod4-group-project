@@ -8,10 +8,10 @@ import { SectionLayout } from "./layouts/SectionLayout";
 import { QuizLayout } from "./layouts/QuizLayout";
 
 // Homepage Import
-import { Homepage } from "./components/Homepage/Homepage";
+import { Homepage } from "./pages/Homepage";
 
 // Norse Mythology Imports
-import { NorseHomepage } from "./components/NorseHomepage/NorseHomepage";
+import { NorseHomepage } from "./pages/NorseHomepage";
 import { NorseExtended } from "./pages/NorseExtended";
 import { GodCardsPage } from "./pages/GodCardsPage";
 import { Gods } from "./components/api_norse_myth/Gods";

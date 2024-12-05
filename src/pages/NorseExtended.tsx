@@ -10,11 +10,43 @@ import nineRealms from "../assets/images/nine_realms.jpg";
 import asgard from "../assets/images/asgard.png";
 import midgard from "../assets/images/midgard.jpg";
 import jotunheim from "../assets/images/Jotunheim.jpg";
+import {useState, useEffect} from 'react'
+import 'animate.css';
+
 
 /* ========================
   The Norse Mythology Guide 
 ======================== */
+
+
 export const NorseExtended = () => {
+
+
+  const [scroll,setScroll] = useState(0)
+  const [animate, setAnimate] = useState('')
+
+  const handleScroll = (e :any) => {
+  
+    setScroll(scrollY)
+    if ( Number(scrollY)> 800) setAnimate('animate__animated animate__fadeInLeft')
+  
+  }
+  
+  
+  useEffect (( ) =>      {
+  
+  
+    window.addEventListener('scroll', handleScroll)
+  
+  }, []) 
+ console.log(animate)
+ console.log(scroll)
+
+
+
+
+
+
   return (
     <>
       <div className="mx-5 pt-5 flex justify-center flex-col ">
@@ -56,7 +88,7 @@ export const NorseExtended = () => {
             />
           </div>
 
-          <p className="font-montserrat leading-7 xs:text-sm">
+          <p className={"font-montserrat leading-7 xs:text-sm "+ animate } >
             The Nine Realms in Norse mythology represent different worlds within
             the cosmos, all interconnected by the great World Tree, Yggdrasil.
             Each realm has its own unique characteristics, inhabitants, and role
