@@ -100,7 +100,7 @@ export const Gods = () => {
           collapsible
           className=" font-montserrat text-xl mx-5"
         >
-          {data.map((element) => {
+          {data.map((element,index)  => {
             {
               element.nodeType === "heading-2" && content_count++;
             }
