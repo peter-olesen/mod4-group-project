@@ -1,11 +1,11 @@
-import ContentButton from "../ui/content_button.tsx";
-import norseHomepage from "../../assets/images/Homepage_background.png";
-import norseGods from "../../assets/images/norse_gods.jpg";
+import ContentButton from "../components/ui/content_button.tsx";
+import norseHomepage from "../assets/images/Homepage_background.png";
+import norseGods from "../assets/images/norse_gods.jpg";
 import { NavLink } from "react-router-dom";
 /* =======================
   Norse Mythology Homepage
 ======================= */
-import NorseGodCards  from "../api_norse_myth/GodList.tsx";
+import NorseGodCards from "../components/api_norse_myth/GodList.tsx";
 
 export const NorseHomepage = () => {
   return (
@@ -31,7 +31,9 @@ export const NorseHomepage = () => {
         </div>
         <div className="pt-5">
           <div className="pb-3">
-            <h2 className=" flex justify-center mb-8 font-newRocker text-fire text-2xl">Norse Gods</h2>
+            <h2 className=" flex justify-center mb-8 font-newRocker text-fire text-2xl">
+              Norse Gods
+            </h2>
           </div>
           <div className="flex justify-center items-center ">
             <img
@@ -45,10 +47,8 @@ export const NorseHomepage = () => {
               <ContentButton content="View collection"></ContentButton>
             </NavLink>
           </div>
-        
         </div>
-        <NorseGodCards/>
-
+        <NorseGodCards />
       </div>
       <hr />
     </>
