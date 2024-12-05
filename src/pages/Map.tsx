@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MapofIceland from "../assets/images/iceland_amo_2020226_lrg.jpg";
+
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 type Region = {
   id: string;
@@ -55,22 +57,26 @@ export const Map = () => {
   };
   return (
     <div>
-      <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-10">
-        Historical Map of Iceland
+      <h1 className="font-newRocker text-center m-auto text-2xl w-80 mt-10 animate__animated animate__flipInX text-fire">
+        History of Icelandic Folklore
       </h1>
       <div className="relative">
         <img src={MapofIceland} alt="Map of Iceland" className="w-full mt-20" />
         {/* Example of clickable regions */}
-        {regions.map((region, index) => {
-          return (
-            <div
-              className={`absolute w-[4%] h-[4%] opacity-80 cursor-pointer ${region.color} ${region.position}`}
-              onClick={() => handleRegionClick(region)}
-              title={region.name}
-              key={index}
-            />
-          );
-        })}
+        {regions.map((region, index) => (
+          <div
+            className={`absolute w-[4%] h-[4%] opacity-80 cursor-pointer rounded-full ${
+              region.color
+            } ${region.position} ${
+              selectedRegion?.id === region.id ? "animate-pulse" : ""
+            }`}
+            data-tip={region.description}
+            onClick={() => handleRegionClick(region)}
+            title={region.name}
+            key={index}
+          />
+        ))}
+        <ReactTooltip place="top" />
       </div>
 
       {selectedRegion && (
@@ -78,7 +84,7 @@ export const Map = () => {
           <h2 className="font-bold pb-5 font-modernAntiqua text-center">
             {selectedRegion.name}
           </h2>
-          <p>{selectedRegion.description}</p>
+          <p className="font-montserrat">{selectedRegion.description}</p>
         </div>
       )}
     </div>

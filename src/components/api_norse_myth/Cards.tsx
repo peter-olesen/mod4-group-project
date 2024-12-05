@@ -24,7 +24,6 @@ import { useEffect, useState } from "react";
 /*
 ======================================================================
 THE COMPONENT GOES THROUGH CREATURELIST.TSX AND THAT IS PUT IN APP.TSX
-qwerqwerqx
 ======================================================================
 */
 
@@ -37,6 +36,8 @@ const CreatureCards = ({ name, about, imgsrc }: Props) => {
   /* ==============
     Imported Images
   ============== */
+
+
   const images: Record<string, string> = {
     berserker: berserker,
     nidhogg: nidhogg,

@@ -114,11 +114,10 @@ export const Gods = () => {
                     </AccordionTrigger>
                   ) : null}
                   <AccordionContent>
-                    <GodsElement name={element.nodeType}>
+                    <GodsElement name={element.nodeType} >
                       {element.content.map((text) => {
-                        if (text.value === "Family Tree") {
-                          return <></>;
-                        }
+                        if (text.value === "Family Tree") return <></>;
+                        
 
                         return (
                           <>
