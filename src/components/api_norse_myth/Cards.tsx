@@ -20,6 +20,7 @@ import nerthusImg from "../../assets/images/nerthus.png";
 import tyrImg from "../../assets/images/formated/Tyr.png";
 import njordImg from "../../assets/images/njord.png";
 import  {Link} from "react-router-dom"
+import { useEffect, useState } from "react";
 /*
 ======================================================================
 THE COMPONENT GOES THROUGH CREATURELIST.TSX AND THAT IS PUT IN APP.TSX
@@ -61,12 +62,15 @@ const CreatureCards = ({ name, about, imgsrc }: Props) => {
 
   const imgUrl = images[name.toLowerCase()];
 
+
+
+
   return (
     <>
       {/*========
       The Cards
     ========*/}
-      <div className="card flex flex-col items-center justify-center my-16 border-b-2 pb-16 mx-5">
+      <div className="card flex flex-col items-center justify-center my-8 border-b-2 pb-8 mx-5" >
         {(imgsrc || imgUrl) && (
           <img
             src={imgUrl || imgsrc}

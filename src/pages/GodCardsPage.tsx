@@ -32,7 +32,7 @@ export const GodCardsPage = () => {
         {/* ======================================
           Buttons to choose which page should load
         ====================================== */}
-      <div className="flex my-14">
+      <div className="flex my-14 ">
         <ContentButton
           content="Gods"
           onClick={() => setActiveComponent("gods")}
