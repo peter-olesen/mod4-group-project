@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Droplaugarsona from "../assets/images/formated/Droplaug2.png";
 import ContentButton from "@/components/ui/content_button";
 import Deacon from "../assets/images/formated/Deacon of dark river.png";
@@ -16,8 +15,10 @@ import Hiddenpeople from "../assets/images/formated/The hidden people.png";
 import Grettissaga from "../assets/images/formated/Grettis saga.png";
 import MountainEyvindur from "../assets/images/formated/Mountain Eyvindur.png";
 
+/* ====================================
+  Cards of Icelandic Folklore and Sagas
+==================================== */
 const IcelandicSagas = () => {
-
   /* const sagas = [
     {name:"", about:""},
     {name:"", about:""},

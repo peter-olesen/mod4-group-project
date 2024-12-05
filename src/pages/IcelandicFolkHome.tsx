@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
 import Droplaugarsona from "../assets/images/formated/Droplaug2.png";
 import DroplaugsPlot from "../assets/images/formated/Dropplaugs Plot summary.png";
 import DroplaugsTheme from "../assets/images/formated/Dropplaugs Themes.png";
 
+/* ============================
+    Hardcoding the Droplaugarsaga
+  ============================ */
 export const IcelandicFolkHome = () => {
   return (
     <div>
