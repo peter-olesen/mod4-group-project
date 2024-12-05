@@ -1,5 +1,5 @@
 import CreatureCards from "./Cards";
-import React from "react";
+
 const CreatureList = () => {
   /*
   ===================
@@ -13,7 +13,7 @@ const CreatureList = () => {
         "Berserkers were elite Viking warriors, part of a fearsome cult that harnessed the power of animals. Known for their fearlessness and boundless fury in battle, they inspired terror, with some even speculating they were shapeshifters.",
     },
     {
-      name: "nidhogg",
+      name: "Nidhogg",
       about:
         "Nidhogg is a ferocious dragon who gnaws at the roots of Yggdrasil, the tree which supports the nine worlds of Norse mythology. This power-hungry monster is sometimes referred to as “the Malice Striker,” an appropriate name given that he rules over dark criminals and is bent on destroying peace and virtue.",
     },
@@ -60,6 +60,8 @@ const CreatureList = () => {
           key={creature.name+index}
           name={creature.name}
           about={creature.about}
+          index={index}
+          baseUrl={"/gods-creatures/"}
           />
         ))}
       </div>

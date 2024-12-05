@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ContentButton from "../ui/content_button";
 
@@ -50,9 +49,10 @@ type Props = {
   name: string;
   about: string;
   imgsrc?: string;
-  index: number
+  index: number;
+  baseUrl: string;
 };
-const CreatureCards = ({ name, about, imgsrc, index }: Props) => {
+const CreatureCards = ({baseUrl, name, about, imgsrc, index }: Props) => {
   /* ==============
     Imported Images
   ============== */
@@ -74,9 +74,6 @@ const CreatureCards = ({ name, about, imgsrc, index }: Props) => {
     "brennu-njáls saga": BrennuNjalssaga,
     "the hidden people": Hiddenpeople,
     "grettis saga": Grettissaga,
-
-
-
     //creatures
     berserker: berserker,
     nidhogg: nidhogg,
@@ -103,9 +100,6 @@ const CreatureCards = ({ name, about, imgsrc, index }: Props) => {
 
   const imgUrl = images[name.toLowerCase()];
 
-
-
-  
   return (
     <>
       {/*========
@@ -140,7 +134,7 @@ const CreatureCards = ({ name, about, imgsrc, index }: Props) => {
 
         <p className="font-montserrat">{about}</p>
         <div className=" mt-7 ">
-          <Link to={"/gods-creatures/" + name}>
+          <Link to={baseUrl + name}>
             <ContentButton content="Read more"></ContentButton>
           </Link>
         </div>

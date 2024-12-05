@@ -1,6 +1,6 @@
 
 import CreatureCards from "@/components/api_norse_myth/Cards";
-import React from "react";
+
 const SagaList = () => {
 
 
@@ -60,6 +60,8 @@ return (
             key={saga.name+index}
             name={saga.name}
             about={saga.about}
+            index={index}
+            baseUrl={"/icelandic-folkhome/"} 
             />
         ))}
     </div>
