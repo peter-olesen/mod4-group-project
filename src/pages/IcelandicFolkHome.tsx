@@ -21,7 +21,7 @@ export const IcelandicFolkHome = () => {
         Egils Saga. However, it still offers insight into the lives and moral
         codes of early Icelandic settlers.
       </p>
-      <p className="font-montserrat font-bold mt-11 mx-5 animate__animated animate__flipInX">
+      <p className="font-montserrat font-bold mt-11 mx-5 animate__animated animate__flipInX text-fire text-center">
         Overview of Droplaugarsona Saga
       </p>
       <p className="font-montserrat mt-8 mx-5 animate__animated animate__fadeInLeft">
@@ -31,7 +31,7 @@ export const IcelandicFolkHome = () => {
         of family drama and vengeance, and it features typical saga themes like
         honor, fate, and conflict.
       </p>
-      <p className="font-montserrat font-bold mt-9 mx-5 animate__animated animate__flipInX">
+      <p className="font-montserrat font-bold mt-9 mx-5 animate__animated animate__flipInX text-fire text-center">
         Main Characters
       </p>
       <p className="font-montserrat mt-8 mx-5 animate__animated animate__fadeInLeft">
@@ -56,7 +56,7 @@ export const IcelandicFolkHome = () => {
       </p>
 
       <img src={DroplaugsPlot} className="m-auto mb-9 mt-20 " />
-      <p className="font-montserrat font-bold mt-9 mx-5 mb animate__animated animate__flipInX">
+      <p className="font-montserrat font-bold mt-9 mx-5 mb animate__animated animate__flipInX text-center text-fire">
         Plot Summary
       </p>
       <p className="font-montserrat mt-8 mx-5 animate__animated animate__fadeInLeft">
@@ -92,7 +92,7 @@ export const IcelandicFolkHome = () => {
         strategic alliances.
       </p>
       <img src={DroplaugsTheme} className="m-auto w-60 mt-9 " />
-      <p className="font-montserrat font-bold mt-9 mx-5 mb animate__animated animate__flipInX">
+      <p className="font-montserrat font-bold mt-9 mx-5 mb animate__animated animate__flipInX text-center text-fire">
         Themes
       </p>
       <p className="font-montserrat mt-8 mx-5 animate__animated animate__fadeInLeft">
@@ -121,7 +121,7 @@ export const IcelandicFolkHome = () => {
         recognition that the saga's protagonists are not invincible and face
         their own human flaws.
       </p>
-      <p className="font-montserrat font-bold mt-9 mx-5 mb animate__animated animate__flipInX">
+      <p className="font-montserrat font-bold mt-9 mx-5 mb animate__animated animate__flipInX text-center text-fire">
         Cultural and Historical Context
       </p>
       <p className="font-montserrat mt-8 mx-5 animate__animated animate__fadeInLeft">
