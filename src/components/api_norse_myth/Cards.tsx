@@ -1,22 +1,6 @@
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import ContentButton from "../ui/content_button";
-import Droplaugarsona from "../../assets/images/formated/Droplaug2.png";
-import Gryla from "../../assets/images/formated/Gryla.png";
-import Trolls from "../../assets/images/formated/trolls.png";
-import Grettissaga from "../../assets/images/formated/Grettis saga.png";
-import MountainEyvindur from "../../assets/images/formated/Mountain Eyvindur.png";
-import Hiddenpeople from "../../assets/images/formated/The hidden people.png";
-import Deacon from "../../assets/images/formated/Deacon of dark river.png";
-import YuleLads from "../../assets/images/formated/Yule lads.png";
-import Lakeworm from "../../assets/images/formated/The lake worm of lagarfljót.png";
-/* 
-import Bukolla from "../assets/images/formated/Búkolla.png";
-import LandWights from "../assets/images/formated/The land wights of iceland.png";
-import Bandamannasaga from "../assets/images/formated/Bandamanna saga.png";
-import Egilssaga from "../assets/images/formated/Egils Saga.png";
-import Hrafnkelssaga from "../assets/images/formated/Hrafnkels saga.png";
-import BrennuNjalssaga from "../assets/images/formated/Brennu Njáls saga.png";
-
- */
 
 import berserker from "../../assets/images/formated/Berserker.png";
 import nidhogg from "../../assets/images/formated/Nidhogg.png";
@@ -38,8 +22,22 @@ import freyrImg from "../../assets/images/freyr.jpg";
 import nerthusImg from "../../assets/images/nerthus.png";
 import tyrImg from "../../assets/images/formated/Tyr.png";
 import njordImg from "../../assets/images/njord.png";
+import Droplaugarsona from "../../assets/images/formated/Droplaug2.png";
+import Deacon from "../../assets/images/formated/Deacon of dark river.png";
+import Gryla from "../../assets/images/formated/Gryla.png";
+import YuleLads from "../../assets/images/formated/Yule lads.png";
+import Lakeworm from "../../assets/images/formated/The lake worm of lagarfljót.png";
+import Trolls from "../../assets/images/formated/trolls.png";
+import Bukolla from "../../assets/images/formated/Búkolla.png";
+import LandWights from "../../assets/images/formated/The land wights of iceland.png";
+import Bandamannasaga from "../../assets/images/formated/Bandamanna saga.png";
+import Egilssaga from "../../assets/images/formated/Egils Saga.png";
+import Hrafnkelssaga from "../../assets/images/formated/Hrafnkels saga.png";
+import BrennuNjalssaga from "../../assets/images/formated/Brennu Njáls saga.png";
+import Hiddenpeople from "../../assets/images/formated/The hidden people.png";
+import Grettissaga from "../../assets/images/formated/Grettis saga.png";
+import MountainEyvindur from "../../assets/images/formated/Mountain Eyvindur.png";
 
-import  {Link} from "react-router-dom"
 
 /*
 ======================================================================
@@ -51,24 +49,30 @@ type Props = {
   name: string;
   about: string;
   imgsrc?: string;
+  index: number
 };
-const CreatureCards = ({ name, about, imgsrc }: Props) => {
+const CreatureCards = ({ name, about, imgsrc, index }: Props) => {
   /* ==============
     Imported Images
   ============== */
 
-
   const images: Record<string, string> = {
-    //icelandicsagas
-    hiddenpeople: Hiddenpeople,
-    grettissaga: Grettissaga,
-    "droplaugarsona saga": Droplaugarsona,
-    "mountain-eyvindur": MountainEyvindur,
+    //IcelandicSagas
+    "dropplaugarsona saga": Droplaugarsona,
     "the deacon of dark river": Deacon,
-    "the lake worm of lagarfljót": Lakeworm,
+    "mountain-eyvindur": MountainEyvindur,
+    "gryla": Gryla,
     "the yule lads": YuleLads,
-    gryla: Gryla,
-    trolls: Trolls,
+    "the lake worm of lagarfljót": Lakeworm,
+    "trolls": Trolls,
+    "búkolla": Bukolla,
+    "the land wights of iceland": LandWights,
+    "bandamanna saga": Bandamannasaga,
+    "egils saga": Egilssaga,
+    "hrafnkels saga": Hrafnkelssaga,
+    "brennu-njáls saga": BrennuNjalssaga,
+    "the hidden people": Hiddenpeople,
+    "grettis saga": Grettissaga,
     //creatures
     berserker: berserker,
     nidhogg: nidhogg,
@@ -94,14 +98,28 @@ const CreatureCards = ({ name, about, imgsrc }: Props) => {
   };
 
   const imgUrl = images[name.toLowerCase()];
-  console.log(imgUrl)
-  console.log(name)
+
   return (
     <>
       {/*========
       The Cards
     ========*/}
-      <div className="card flex flex-col items-center justify-center my-8 border-b-2 pb-8 mx-5" >
+      <motion.div
+        className="card flex flex-col items-center justify-center my-8 border-b-2 pb-8 mx-5"
+        initial={{
+          opacity: 0,
+          // if odd index card,slide from right instead of left
+          x: index % 2 === 0 ? 50 : -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0, // Slide in to its original position
+          transition: {
+            duration: 1, // Animation duration
+          },
+        }}
+        viewport={{ once: true }}
+      >
         {(imgsrc || imgUrl) && (
           <img
             src={imgUrl || imgsrc}
@@ -115,11 +133,11 @@ const CreatureCards = ({ name, about, imgsrc }: Props) => {
 
         <p className="font-montserrat">{about}</p>
         <div className=" mt-7 ">
-        <Link to={"/gods-creatures/" + name}>
+          <Link to={"/gods-creatures/" + name}>
             <ContentButton content="Read more"></ContentButton>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

@@ -60,6 +60,7 @@ const CreatureList = () => {
           key={creature.name+index}
           name={creature.name}
           about={creature.about}
+          index={index}
           />
         ))}
       </div>
