@@ -1,19 +1,5 @@
-import Droplaugarsona from "../assets/images/formated/Droplaug2.png";
-import ContentButton from "@/components/ui/content_button";
-import Deacon from "../assets/images/formated/Deacon of dark river.png";
-import Grýla from "../assets/images/formated/Gryla.png";
-import YuleLads from "../assets/images/formated/Yule lads.png";
-import Lakeworm from "../assets/images/formated/The lake worm of lagarfljót.png";
-import Trolls from "../assets/images/formated/trolls.png";
-import Bukolla from "../assets/images/formated/Búkolla.png";
-import LandWights from "../assets/images/formated/The land wights of iceland.png";
-import Bandamannasaga from "../assets/images/formated/Bandamanna saga.png";
-import Egilssaga from "../assets/images/formated/Egils Saga.png";
-import Hrafnkelssaga from "../assets/images/formated/Hrafnkels saga.png";
-import BrennuNjalssaga from "../assets/images/formated/Brennu Njáls saga.png";
-import Hiddenpeople from "../assets/images/formated/The hidden people.png";
-import Grettissaga from "../assets/images/formated/Grettis saga.png";
-import MountainEyvindur from "../assets/images/formated/Mountain Eyvindur.png";
+
+import SagasList from "./SagasList";
 
 /* ====================================
   Cards of Icelandic Folklore and Sagas
@@ -37,7 +23,9 @@ const IcelandicSagas = () => {
     {name:"", about:""},
   ] */
   return (
-    <div>
+
+    <SagasList/>
+   /*  <div>
       <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-3 mb-9 animate__animated animate__jello text-fire">
         Icelandic Sagas
       </h1>
@@ -52,6 +40,7 @@ const IcelandicSagas = () => {
         valuable insight into the lives and moral codes of Iceland's early
         inhabitants.{" "}
       </p>
+
       <hr></hr>
       <img src={Deacon} className="m-auto w-60 mt-10" />
       <h1 className="font-modernAntiqua text-center m-auto text-2xl w-80 mt-5 mb-9 animate__animated animate__swing text-fire">
@@ -227,7 +216,7 @@ const IcelandicSagas = () => {
         )
       )}
     </div>
-*/
+ */ 
   );
 };
 
