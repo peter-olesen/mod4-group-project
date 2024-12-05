@@ -19,8 +19,9 @@ import freyrImg from "../../assets/images/freyr.jpg";
 import nerthusImg from "../../assets/images/nerthus.png";
 import tyrImg from "../../assets/images/formated/Tyr.png";
 import njordImg from "../../assets/images/njord.png";
-import  {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 /*
 ======================================================================
 THE COMPONENT GOES THROUGH CREATURELIST.TSX AND THAT IS PUT IN APP.TSX
@@ -31,12 +32,12 @@ type Props = {
   name: string;
   about: string;
   imgsrc?: string;
+  index: number
 };
-const CreatureCards = ({ name, about, imgsrc }: Props) => {
+const CreatureCards = ({ name, about, imgsrc, index }: Props) => {
   /* ==============
     Imported Images
   ============== */
-
 
   const images: Record<string, string> = {
     berserker: berserker,
@@ -65,13 +66,28 @@ const CreatureCards = ({ name, about, imgsrc }: Props) => {
 
 
 
-
+  
   return (
     <>
       {/*========
       The Cards
     ========*/}
-      <div className="card flex flex-col items-center justify-center my-8 border-b-2 pb-8 mx-5" >
+      <motion.div
+        className="card flex flex-col items-center justify-center my-8 border-b-2 pb-8 mx-5"
+        initial={{
+          opacity: 0,
+          // if odd index card,slide from right instead of left
+          x: index % 2 === 0 ? 50 : -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0, // Slide in to its original position
+          transition: {
+            duration: 1, // Animation duration
+          },
+        }}
+        viewport={{ once: true }}
+      >
         {(imgsrc || imgUrl) && (
           <img
             src={imgUrl || imgsrc}
@@ -85,11 +101,11 @@ const CreatureCards = ({ name, about, imgsrc }: Props) => {
 
         <p className="font-montserrat">{about}</p>
         <div className=" mt-7 ">
-        <Link to={"/gods-creatures/" + name}>
+          <Link to={"/gods-creatures/" + name}>
             <ContentButton content="Read more"></ContentButton>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

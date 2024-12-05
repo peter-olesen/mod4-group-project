@@ -51,7 +51,8 @@ const NorseGodCards = ()=>{
           key={god.slug+index}
           name={god.title}
           about={god.tagline}
-          imgsrc={god.image?.url} />
+          imgsrc={god.image?.url} 
+          index= {index}/>
 
 
 
