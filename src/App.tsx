@@ -14,7 +14,7 @@ import { Homepage } from "./components/Homepage/Homepage";
 import { NorseHomepage } from "./components/NorseHomepage/NorseHomepage";
 import { NorseExtended } from "./pages/NorseExtended";
 import { GodCardsPage } from "./pages/GodCardsPage";
-import { Gods } from "./components/api_norse_myth/Gods.tsx";
+import { Gods } from "./components/api_norse_myth/Gods";
 
 // Icelandic Folklore Imports
 import { IcelandicFolkHome } from "./pages/IcelandicFolkHome";
@@ -52,6 +52,9 @@ const App: React.FC = () => {
           {/* Icelandic Folklore Routes */}
           <Route path={"/icelandic-folklore"} element={<SectionLayout />}>
             <Route index element={<IcelandicFolklore />} />
+          </Route>
+          <Route path={"/icelandic-folkhome"} element={<SectionLayout />}>
+            <Route index element={<IcelandicFolkHome />} />
           </Route>
           <Route path={"/icelandic-sagas"} element={<SectionLayout />}>
             <Route index element={<IcelandicSagas />} />
